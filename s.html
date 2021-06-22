@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+</head>
+<body>
+	<style>
+		table{
+			width: 700px;
+
+			border: 1px double #666;
+		}
+		th, td{
+			border:1px solid gray;
+		}
+		tr:nth-child(even){
+			background-color: hotpink;
+		}
+		tbody td:nth-child(odd){
+			background-color: khaki;
+		}
+		.box{
+			background-color: khaki;
+			width: 100px;
+			font-size: 20px;
+			border: solid;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.wrap{
+			width: 960px;
+			margin: auto;
+			background-color: lightcoral;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.col{
+			width: 300px;
+			padding: 10px;
+			margin: 10px;
+			box-sizing: border-box;
+			border: 2px solid plum;
+			background-color: lightgoldenrodyellow;
+		}
+	</style>
+	<table>
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+			</tr>
+
+		<tfoot>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+			</tr>
+		</tfoot>
+		</tbody>
+	</table>
+	<div class="box">
+		一二三四五六七八九十
+		一二三四五六七八九十
+		一二三四五六七八九十
+		一二三四五六七八九十
+		一二三四五六七八九十
+	</div>
+	<div class="wrap">
+		<div class="col">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim, cumque deleniti dolorum, esse quia culpa voluptatibus nostrum assumenda provident obcaecati, iure neque aspernatur minus eaque quibusdam exercitationem pariatur deserunt!
+		</div>
+		<div class="col">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim, cumque deleniti dolorum, esse quia culpa voluptatibus nostrum assumenda provident obcaecati, iure neque aspernatur minus eaque quibusdam exercitationem pariatur deserunt!
+		</div>
+		<div class="col">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim, cumque deleniti dolorum, esse quia culpa voluptatibus nostrum assumenda provident obcaecati, iure neque aspernatur minus eaque quibusdam exercitationem pariatur deserunt!
+		</div>
+	</div>
+</body>
+</html>

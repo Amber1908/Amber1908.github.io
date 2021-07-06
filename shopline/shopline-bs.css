@@ -1,0 +1,280 @@
+/* 共用區 */
+.topBanner,
+.slongan,
+.product,
+.moreService,
+.famous,
+.famousIntroduce, .bottomBanner,
+.information,
+.footer,
+.lan {
+	width: 100%;
+}
+.container, .famous_row {
+	max-width: 960px;
+}
+dl dt{
+	padding-top: 20px;
+}
+/* 導覽菜單區  */
+	
+/* 最上面的Ｂanner區  */
+
+
+.topBanner img{
+	width: 100%;
+	margin-top: 80px;
+	box-sizing: border-box;
+	padding-left: 15px;	
+}
+.topBanner h1,h2{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.topBanner p{
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	text-align: left;
+		font-family: Arial,
+		Helvetica,
+		sans-serif;
+
+}
+.for_email {
+	border: 0;
+	margin-left: 40px;
+	border-bottom: 1px solid wheat;
+	box-sizing: border-box;
+	padding: 30px 80px 10px 60px;
+	color: #ffffff;
+}
+
+input[placeholder] {
+	font-size: 12px;
+	display: block;
+	width: 300px;
+	padding-right: 10px;
+	padding-top: 25px;
+}
+.for_free{
+	width: 100px;
+	text-decoration: none;
+	border: 0px;
+	background-color: rgb(13, 74, 243);
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	color: #fff;
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 15px 180px 15px 100px;
+}
+/* 標語區 */
+.slogan h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.slogan p {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+/* 產品區 */
+.product img{
+	width: 100%;
+	padding: 20px 0px 20px 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.product_h1,
+.product_p {
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+ .item {
+	padding-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.item i{
+	color:cornflowerblue;
+	padding-right: 10px;
+}
+/* .product_row {
+	border-bottom: darkgrey 1px solid;
+	padding-bottom: 30px;
+} */
+.moreService{
+	background-color: rgb(232, 232, 232);
+	padding: 30px 10px;
+}
+.moreService h1{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.item_service {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.moreService img{
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	box-shadow:0 0 12px dimgray;
+	background-color: #ffffff;
+	box-sizing: border-box;
+
+}
+.product_row:first-child {
+	border-bottom: darkgrey 1px solid;
+	padding-bottom: 30px;
+}
+
+.product_row:nth-child(2) {
+	border-bottom: darkgrey 1px solid;
+	padding-bottom: 30px;
+
+}
+.product_row:nth-child(3) {
+	padding-bottom: 30px;
+
+}
+.product_row:last-child {
+	padding-bottom: 30px;
+	border-top: darkgrey 1px solid;
+}
+.famous h1{
+	margin: 20px;
+}
+
+.famous_row{
+	padding: 20px;
+}
+.bottomBanner{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.bottomBanner h2,p{
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: left;
+}
+.bottomBanner_a {
+margin-bottom: 30px;
+padding: 20px;
+text-decoration: none;
+}
+.covid19{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	padding: 15px 0px;
+	text-align: center;
+}
+.icons{
+	padding-top: 30px;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+footer a{
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px;
+}
+footer p{
+	text-align: center;
+	margin-bottom: 30px;
+}
+/* 資訊連結區 */
+
+/* 37-54 下面是桌機區 */
+@media screen and (min-width:992px) {
+	.row_topBanner:nth-child(odd) {
+		flex-direction:row-reverse ;
+	}
+	.topBanner h1{
+		margin-top: 120px;
+	}
+	.topBanner h1, h2 {
+		text-align: left;
+	}
+	.topBanner p {
+		padding-left: 0px;
+
+	}
+	.for_email {
+		margin-left: 0px;
+		padding: 30px 80px 10px 60px;
+	}
+	.for_free {
+		width: 50px;
+		border: 0px;
+		margin-top: 5px;
+		margin-bottom: 30px;
+		margin-left: 80px;
+		color: #fff;
+		border-radius: 50px;
+		font-size: 16px;
+		padding: 15px 100px 15px 40px;
+	}
+	.slogan p {
+		padding-bottom: 50px;
+	}
+	.product_h1{
+		margin-top: 40px;
+	}
+	.product_row:first-child{
+		border-bottom: darkgrey 1px solid;
+	}
+	.product_row:nth-child(2) {
+		border-bottom: darkgrey 1px solid;
+	}
+	.product_row:last-child{
+		padding-bottom: 30px;
+		border-top: darkgrey 1px solid;
+	}
+	.product_row:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	.famous_row {
+		flex-direction: row-reverse;
+		padding-left: 35px;
+	}
+	.famous_row  img{
+		width: 100%;
+	}
+	.self-cols-md-7 {
+		width: calc(100% / 7);
+	}
+	dl dt {
+		font-size: 12px;
+	}
+	footer a {
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	display:inline;
+	flex-wrap: nowrap;
+	justify-content: center;
+	
+	}
+	
+}
+/* 37-99 上面是桌機區 */
+
+
+

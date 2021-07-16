@@ -79,19 +79,122 @@
     </ul>
 
     <script>
-	let url='https://raw.githubusercontent.com/apprunner/FileStorage/master/Computer.json';
-	let pcArray,partsArray;
-        //改版成動態加入DOM節點
-        let pcMenu, partsMenu;
+
+    let pcItems, partsItemes;
+    let pcMenu, partsMenu;
+        let url="https://raw.githubusercontent.com/Amber1908/FileStorage/master/Computer.json";
+        let pcArray,partsArray;
         window.onload = function () {
-		fetch(url)
-		.then(response=>response.json())
-		.then(result=>{
-			pcArray=result.
-		
-		// .catch(ex=>{});
-           
+            fetch(url)
+                .then(response => response.json())
+                .then(result=>
+                {
+                    pcArray = result.Pc;
+                    partsArray = result.Parts;
+
+                    //驗證是否抓到資料
+                    // console.log(pcArray);
+                    // console.log(partsArray);
+                    
+                    //pcItems
+                    // pcItems = document.querySelectorAll('#pc a');
+                    // pcItems.forEach((anchor,index)=>
+                    // {
+                    //     anchor.innerText=pcArray[index].pc;
+                    //     anchor.setAttribute('href',pcArray[index].url);
+                    // });
+
+                    //第一方法
+                    //先做pcArray有多少個就增加幾個超連結
+                    // for(let i=0;i<pcArray.length;i++)
+                    // {
+                    //     let a=document.createElement("a");
+                    //     pc.append(a);
+                    // }
+                    //將網路上的JSON資料塞進DOM生成的超連結a
+                    // pcMenu = document.querySelectorAll('#pc a');
+                    // pcMenu.forEach((anchor,index)=>
+                    // {
+                    // anchor.innerHTML=pcArray[index].pc;
+                    // anchor.setAttribute('href',pcArray[index].url);
+                    // });
+                        
+                    //法二
+                    pcMenu = document.querySelector('#pc');
+                    pcArray.forEach(anchor=>
+                    {
+                        pcMenu=document.createElement('a');
+                        pcMenu.innerHTML=anchor.pc;
+                        pcMenu.setAttribute('href',anchor.url);
+                        pc.appendChild(pcMenu);
+                    });
+                    
+                    //partsItems
+                    // partsItems = document.querySelectorAll('#parts a');
+                    // partsItems.forEach((anchor,index)=>
+                    // {
+                    //     anchor.innerText=partsArray[index].parts;
+                    //     anchor.setAttribute('href',partsArray[index].url);
+                    // });
+
+                    // for(let i=0;i<partsArray.length;i++){
+                    //     let a=document.createElement("a");
+                    //     parts.append(a);
+                    // }
+                    //將網路上的JSON資料塞進DOM生成的超連結a
+                    // partsMenu = document.querySelectorAll('#parts a');
+                    // partsMenu.forEach((anchor,index)=>
+                    // {
+                    // anchor.innerHTML=pcArray[index].pc;
+                    // anchor.setAttribute('href',pcArray[index].url);
+                    // });
+                    
+                    //方法二
+                    pcMenu = document.querySelectorAll('#parts');
+                    partsArray.forEach(anchor=>
+                    {   
+                        pcMenu = document.createElement("a");
+                        pcMenu.innerText = anchor.parts;
+                        pcMenu.setAttribute('href',anchor.url);
+                        parts.appendChild(pcMenu);
+                    });
+
+                })
+                .catch(ex=>{ })
+                .finally(()=>{ });
+
+
         }
+            //pcMenu
+            // for(let i=0;i<pcArray.length;i++){
+            //     let a=document.createElement("a");
+            //         pc.append(a);
+            // }
+            // pcMenu = document.querySelectorAll('#pc a');
+            // pcMenu.forEach((anchor,index)=>
+            // {
+            //     anchor.innerHTML=pcArray[index].pc;
+            //     anchor.setAttribute('href',pcArray[index].url);
+            // });
+
+            //partsMenu
+
+            // for(let i=0;i<partsArray.length;i++){
+            //     let a=document.createElement("a");
+            //         parts.append(a);
+            // }
+            // pcMenu = document.querySelectorAll('#parts a');
+            // pcMenu.forEach((anchor,index)=>
+            // {
+            //     anchor.innerHTML=partsArray[index].parts;
+            //     anchor.setAttribute('href',partsArray[index].url);
+            // });
+        // }
+      
+		
+		
+           
+        
 
     </script>
 </body>

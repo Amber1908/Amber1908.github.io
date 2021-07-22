@@ -11,4 +11,12 @@ fetch(url)
 	let iphone12pro=result[0].iphone12Pro.name;
 	console.log(iphone12pro);
 
+	let iphone12proPrice=result[0].iphone12Pro.price;
+	let iphone12maxPrice=result[0].iphone12ProMax.price;
+	console.log(iphone12maxPrice);
 });
+// 	let btniphone12max=document.querySelector(".btnTtpeMax");
+// 	btniphone12max.onclick=function () {
+// 	let totalprice=document.querySelector('.totalPrice');
+// 	// totalprice.innerText=
+// }

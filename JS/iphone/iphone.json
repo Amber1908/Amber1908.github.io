@@ -1,6 +1,6 @@
 [
 	{
-		"iphone 12 Pro":{
+		"iphone12Pro":{
 			"screen": "6.1 吋顯示器¹",
 			"price": "NT$ 33,900",
 			"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero-all?wid=470&amp;hei=556&amp;fmt=jpeg&amp;qlt=95&amp;.v=1604021662000",
@@ -27,7 +27,7 @@
 				}
 			]
 		},
-		"iphone12 Pro Max":{
+		"iphone12ProMax":{
 			"screen": "6.7 吋顯示器¹",
 			"price": "NT$ 37,900",
 			"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero-all?wid=470&amp;hei=556&amp;fmt=jpeg&amp;qlt=95&amp;.v=1604021662000",

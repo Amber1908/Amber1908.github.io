@@ -10,11 +10,15 @@
 .typeArea{
 	margin-left: 40px;
 }
-.btnTypePro{
+.btnTypePro,
+.btnTypeMax {
 	width: 450px;
 }
 .btnColor{
 	width: 220px;
+}
+.StoragePrice{
+	width: 200px;
 }
 .btnCart{
 	border-radius: 50px;

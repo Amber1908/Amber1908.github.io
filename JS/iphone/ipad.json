@@ -4,7 +4,7 @@
 		"price": 18900,
 		"storage": "64GB",
 		"network": "Wi-Fi",
-		"picture": "gray.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000"
 	},
 	{
 		"id": "A002",
@@ -12,7 +12,7 @@
 		"price": 18900,
 		"storage": "64GB",
 		"network": "Wi-Fi",
-		"picture": "silver.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650645000"
 	},
 	{
 		"id": "A003",
@@ -20,7 +20,7 @@
 		"price": 18900,
 		"storage": "64GB",
 		"network": "Wi-Fi",
-		"picture": "rose.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "A004",
@@ -28,7 +28,7 @@
 		"price": 18900,
 		"storage": "64GB",
 		"network": "Wi-Fi",
-		"picture": "green.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-green-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "A005",
@@ -36,7 +36,7 @@
 		"price": 18900,
 		"storage": "64GB",
 		"network": "Wi-Fi",
-		"picture": "blue.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "B001",
@@ -44,7 +44,7 @@
 		"price": 23900,
 		"storage": "256GB",
 		"network": "Wi-Fi",
-		"picture": "gray.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000"
 	},
 	{
 		"id": "B002",
@@ -52,7 +52,7 @@
 		"price": 23900,
 		"storage": "256GB",
 		"network": "Wi-Fi",
-		"picture": "silver.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650645000"
 	},
 	{
 		"id": "B003",
@@ -60,7 +60,7 @@
 		"price": 23900,
 		"storage": "256GB",
 		"network": "Wi-Fi",
-		"picture": "rose.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "B004",
@@ -68,7 +68,7 @@
 		"price": 23900,
 		"storage": "256GB",
 		"network": "Wi-Fi",
-		"picture": "green.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-green-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "B005",
@@ -76,7 +76,7 @@
 		"price": 23900,
 		"storage": "256GB",
 		"network": "Wi-Fi",
-		"picture": "blue.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "C001",
@@ -84,7 +84,7 @@
 		"price": 23200,
 		"storage": "64GB",
 		"network": "Cellular",
-		"picture": "gray.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000"
 	},
 	{
 		"id": "C002",
@@ -92,7 +92,7 @@
 		"price": 23200,
 		"storage": "64GB",
 		"network": "Cellular",
-		"picture": "silver.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650645000"
 	},
 	{
 		"id": "C003",
@@ -100,7 +100,7 @@
 		"price": 23200,
 		"storage": "64GB",
 		"network": "Cellular",
-		"picture": "rose.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "C004",
@@ -108,7 +108,7 @@
 		"price": 23200,
 		"storage": "64GB",
 		"network": "Cellular",
-		"picture": "green.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-green-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "C005",
@@ -116,7 +116,7 @@
 		"price": 23200,
 		"storage": "64GB",
 		"network": "Cellular",
-		"picture": "blue.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "D001",
@@ -124,7 +124,7 @@
 		"price": 28200,
 		"storage": "256GB",
 		"network": "Cellular",
-		"picture": "gray.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000"
 	},
 	{
 		"id": "D002",
@@ -132,7 +132,7 @@
 		"price": 28200,
 		"storage": "256GB",
 		"network": "Cellular",
-		"picture": "silver.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650645000"
 	},
 	{
 		"id": "D003",
@@ -140,7 +140,7 @@
 		"price": 28200,
 		"storage": "256GB",
 		"network": "Cellular",
-		"picture": "rose.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "D004",
@@ -148,7 +148,7 @@
 		"price": 28200,
 		"storage": "256GB",
 		"network": "Cellular",
-		"picture": "green.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-green-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	},
 	{
 		"id": "D005",
@@ -156,6 +156,6 @@
 		"price": 28200,
 		"storage": "256GB",
 		"network": "Cellular",
-		"picture": "blue.png"
+		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
 	}
 ]

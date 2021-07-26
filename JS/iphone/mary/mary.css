@@ -1,0 +1,21 @@
+[box-id]{
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:none;
+	transition: .3s;
+}
+[box-id].active{
+	border: solid 5px red;
+	box-sizing: 0 0 20px red;
+	transition: 0s;
+}
+i{
+	font-size: 48px;
+}
+#msg{
+ font-size: 36px;
+ text-align: center;
+}

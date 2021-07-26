@@ -1,12 +1,15 @@
-.topNav{
+/* .topNav{
 	height: 40px;
-}
-.total{
+	
+} */
+ .total{
 	margin-top: 30px;
+	
 	background-color: #FFF;
 	opacity: 0.9;
 	z-index: 99;
-}
+	width: 100%;
+} 
 .typeArea{
 	margin-left: 40px;
 }

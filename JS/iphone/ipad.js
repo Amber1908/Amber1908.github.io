@@ -1,4 +1,4 @@
-let url="https://raw.githubusercontent.com/Amber1908/Amber1908.github.io/master/JS/iphone/ipad.json";
+let url="https://raw.githubusercontent.com/Amber1908/Amber1908.github.io/master/JS/iphone/ipadNew.json";
 
 let btnColor =document.querySelectorAll('.btnColor');
 let btnimgColor0=document.getElementsByTagName('coloroimg')[0];

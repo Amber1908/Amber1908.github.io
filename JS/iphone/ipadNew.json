@@ -1,7 +1,7 @@
 [{
 		"id": "A001",
 		"color": "太空灰色",
-		"price": 18900,
+		"price": "18,900",
 		"storage": "64GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000"
@@ -9,7 +9,7 @@
 	{
 		"id": "A002",
 		"color": "銀色",
-		"price": 18900,
+		"price": "18,900",
 		"storage": "64GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650645000"
@@ -17,7 +17,7 @@
 	{
 		"id": "A003",
 		"color": "玫瑰金色",
-		"price": 18900,
+		"price": "18,900",
 		"storage": "64GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
@@ -25,7 +25,7 @@
 	{
 		"id": "A004",
 		"color": "綠色",
-		"price": 18900,
+		"price": "18,900",
 		"storage": "64GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-green-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
@@ -33,7 +33,7 @@
 	{
 		"id": "A005",
 		"color": "天藍色",
-		"price": 18900,
+		"price": "18,900",
 		"storage": "64GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650644000"
@@ -41,7 +41,7 @@
 	{
 		"id": "B001",
 		"color": "太空灰色",
-		"price": 23900,
+		"price": "23,900",
 		"storage": "256GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650646000"
@@ -49,7 +49,7 @@
 	{
 		"id": "B002",
 		"color": "銀色",
-		"price": 23900,
+		"price": "23,900",
 		"storage": "256GB",
 		"network": "Wi-Fi",
 		"imgUrl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009?wid=940&hei=1112&fmt=png-alpha&.v=1598650645000"

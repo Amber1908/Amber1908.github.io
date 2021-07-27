@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	const pokemonUrl = "https://raw.githubusercontent.com/apprunner/pokemon.json/master/pokedex.json";
+	const lolUrl="https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json"
+
+	window.onload=()=>{
+		fetch(pokemonUrl)
+		.then(r=>r.text())
+		.then(result=>{
+			document.body.append("=".repeat*(50));
+			document.body.append(result);//可以加文字家dom物件
+		})
+		.then(()=>fetch(lolUrl))
+		.then(r=>r.text())
+		.then(result=>{
+			let br=document.createElement("br");
+			 document.body.append(br.cloneNode(true), br.cloneNode(true),"*".repeat(200), br.cloneNode(true),br.cloneNode(true));
+			 document.body.append(result);
+
+		})
+
+	}
+	//Factory Design Pattern 工廠模式
+
+	</script>
+</body>
+</html>

@@ -24,23 +24,39 @@
         <canvas id="myChart"></canvas>
     </div>
     <script>
-	const url2330="https://raw.githubusercontent.com/Amber1908/FileStorage/master/2330"
-	var ctx,chart;
+	const url2330="https://raw.githubusercontent.com/Amber1908/FileStorage/master/2330.json";
+	function XhrCall(url) {
+            let promise1 = new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.onload = () => resolve(xhr.responseText);
+                xhr.onerror = () => reject(xhr.status);
+                xhr.open("GET", url);
+                xhr.send();
+            });
+            return promise1;
+        }
 	window.onload=()=>{
 		let promise1=XhrCall(url2330);
 		promise1
 		.then(result=>{
-			let array2330=JSON.parse(result)
+			array2330=JSON.parse(result)
+			console.log(array2330);
+			let xArray=[],yArray=[];
+			array2330.forEach(item => {
+				xArray.push(item.Date);
+				yArray.push(item.Price);
+			});
 		})	
-		.catch();
+		.catch()}
 	ctx = document.getElementById("myChart");
+	
 	chart = new Chart(ctx, {
             type: "line",
             data: {
-                labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
+                labels: xArray,
                 datasets: [{
-                    label: "臺北",
-                    data: [16, 15, 18, 21, 25, 27],
+                    label: "台積電",
+                    data: yArray,
                     fill: false,
                     backgroundColor: 'rgba(255,165,0,0.3)',
                     borderColor: 'rgb(255,165,0)',
@@ -70,7 +86,7 @@
             }
         });
 
-}
+
 
     </script>
 

@@ -16,53 +16,137 @@
 			<h1>LOL英雄聯盟圖鑑</h1>
 			</div>
 		</div>
-		<button>fetch</button>
-		<button>xhr</button>
-		<template>
-			<div id="carLOl" class="card" style="width: 18rem;">
-				<img src="..." class="card-img-top" alt="...">
-			</div>	
-			<div class="card-body">
-				<h5 class="card-title">
-					<span id="count"></span> .
-					<span id="engName"></span>-
-					<span id="chName"></span>
-				</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<div class="btnCpntainer d-flex w-100  justify-content-end">
-					<a href="#" id="detail" class="btn btn-outline-primary w-50">Go somewhere</a>
-					<a href="#" id="vedio" class="btn btn-outline-warning w-50 ">Go somewhere</a>
+		<button class="btn btn-light ms-3 mt-3" onclick="fetchFunction()" id="fetch">fetch</button>
+		<!-- <button onclick="xhrFunction()" id="xhr">xhr</button> -->
+		<div id="msg"></div>
+		<div class="container">
+			<div class="container-fluid row  d-flex justify-content-center "></div>
+		</div>
+		<template id="cardlol">
+			<!-- 卡片區 -->
+			<div id="cardLOl" class="card mt-3 mx-3" style="width: 18rem;">
+				<img src="..." class="card-img-top p-3" alt="...">
+				<div class="card-body">
+					<h5 class="card-title cardH5">
+
+					</h5>
+					<p class="card-text h-75">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<div class="btnCpntainer  d-flex w-100 pt-3 justify-content-end">
+						<button href="#" id="detail" class="btn btn-outline-primary w-50" data-target=#detaill>詳細內容</a></button>
+						<!-- <button href="#" id="video" class="btn btn-outline-warning w-50 " data-target=#videoModal>影片</a></button> -->
+					</div>
 				</div>
-			</div>
+			</div>	
 		</template>
-		<div class="modal" tabindex="-1">
+		
+		<div class="modal" tabindex="-1" id="detaillModal">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Modal title</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-						<p>Modal body text goes here.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
+						<h5 class="modal-title fs-1">Modal title</h5>
+						<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button> -->
 					</div>
+					<div class="modal-body">
+						<img src="" class="lolImg w-75 d-block ms-auto me-auto" alt="">
+						<p class="mt-3">Modal body text goes here.</p>
+					</div>
+
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
 				</div>
 			</div>
 		</div>
 
+		<!-- <div class="modal" tabindex="-1" id="videoModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title fs-1">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button> 
+					</div>
+					<div class="modal-body">
+						<video src="" class="lolImg w-75 d-block ms-auto me-auto"></video>
+						<p class="mt-3">Modal body text goes here.</p>
+					</div>
 
-
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> 
+				</div>
+			</div>
+		</div> -->
 
 
 
 
 		<script>
-			const LolUrl="/Users/lintingyu/Documents/GitHub/Amber1908.github.io.git/Amber1908.github.io/JS/iphone/LOL/lol.json";
+			const LolUrl="https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json";
+			let nameArray=[];
+			let championsObject={};
+			let card=document.querySelector('#cardlol');
+			let cloneContent;
+			let infoModal=document.querySelector('#infoModal');
+			let videoModal=document.querySelector('#videoModal');
+			let msg=document.querySelector("#msg");
+			let container=document.querySelector('.container')
+			let row=document.querySelector('.row');
+
+			function fetchFunction(){
+				fetch(LolUrl)
+				.then(response=>response.json())
+				.then(result=>{
+					championsObject=result.data;
+					console.log(championsObject);
+					nameArray=Object.keys(championsObject);
+					console.log(nameArray);
+
+					setCard();
+				})
+				.catch(ex=>{console.log(ex);})
+				
+			}
+			function setCard(){
+				nameArray.forEach((x,index)=>{
+					cloneContent=card.content.cloneNode(true);
+					let name=nameArray[index];
+					console.log(name);
+					let chName=championsObject[name].name;
+					let stats=championsObject[name].stats;
+					let hp=stats.hp;
+					let MoveSpeed=stats.movespeed;
+					let SpellBlock=stats.spellblock;
+					let AttackRange=stats.attackrange;
+					let Armor=stats.armor;
+					cloneContent.querySelector('h5').innerText=`${index+1}:${name}-${chName}`;
+					cloneContent.querySelector('img').src=`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${name}_0.jpg`;
+					cloneContent.querySelector('.card-text').innerText=championsObject[name].blurb;
+
+					cloneContent.querySelector('#detail').addEventListener('click',function () {
+						this.setAttribute('data-bs-toggle','modal');
+						this.setAttribute('data-bs-target','#detaillModal');
+
+						let modal=document.querySelector('#detaillModal');
+						modal.querySelector('.modal-title').innerText=`${name}-${chName}`;
+						modal.querySelector('.lolImg').src=`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${name}_0.jpg`;
+						modal.querySelector('p').innerText=`HP：${hp}\n Move Speed:${MoveSpeed}\n Armor:${Armor}\nSpell Block:${SpellBlock}\n Attack Range:${AttackRange}`;
+					});
+							
+				
+
+					row.append(cloneContent);
+				})
 			
+			}
+
+
+
 
 		</script>
 <!-- Optional JavaScript; choose one of the two! -->

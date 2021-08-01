@@ -43,6 +43,16 @@
                         yArray.push(item.Price);
                     });
 
+                    promise1
+                    .then(result=>{
+                        array2330=JSON.parse(result);
+                        localStorage.setItem('2330',result);
+                    });
+                    else{
+                        console.time('localStorage');
+                        array2330=JSON.parse(licalStorage.getItem('2330'));
+                        console.timeEnd
+                    }
                     
                     //['1月', '2月', '3月', '4月', '5月', '6月']
                     //[16, 15, 18, 21, 25, 27]

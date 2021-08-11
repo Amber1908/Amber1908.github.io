@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<style>
+		.main{
+			height: 100vh;
+			background-color: #050f22;
+			background-image: url(../mary2.0-img/Marybg-01.png);
+			background-size: 100% 100%;
+			
+		}
+		.logo{
+			width: 15%;
+			top: 130px;
+			left:calc(50% - 78px) ;
+			/* https://codepen.io/alphardex/pen/Exxodoq */
+			}
+		.open{ 
+			margin-top: 265px;
+			left:calc(50% - 130px) ;
+			}
+		h1{
+			font-size: 40px;
+			color: burlywood;
+		}
+		p{
+			font-size: 30px;
+			color: burlywood;
+			margin-top: 310px;
+			left:calc(50% - 90px) ;
+		}
+				.btns{
+			width: 400px;
+			top:380px;
+			left: 185px;
+			
+		}
+		.btnJob{
+			margin-left: 250px;
+		}
+		.btnWealth{
+			margin-left: 500px;
+		}
+		.card{
+			background-color:royalblue;
+			width: 120px;
+			height: 180px;
+		}
+		.cardGroup{
+			top:280px;
+			left:310px;
+			
+		}
+		.b{
+			right: 25px;
+			box-shadow:0px 0px 5px black;
+		}
+		.c{
+			right: 41px;
+			box-shadow:0px 0px 5px black;
+		}
+		.d{
+			right: 61px;
+			box-shadow:0px 0px 5px black;
+		}
+		.e{
+			right: 85px;
+			box-shadow:0px 0px 5px black;
+		}
+		#again{
+			top: 180px;
+			left: 45%;
+		}
+/* 上面是桌機 */
+		@media screen and ( max-width:767px) {
+			.logo{
+			width: 20%;
+			top: 130px;
+			left:calc(50% - 39px) ;
+			/* https://codepen.io/alphardex/pen/Exxodoq */
+			}
+			.open{ 
+			margin-top: 185px;
+			left:calc(50% - 70px) ;
+			}
+			h1{
+			font-size: 20px;
+			color: burlywood;
+			}
+			p{
+			font-size: 15px;
+			color: burlywood;
+			margin-top: 210px;
+			left:calc(50% - 45px) ;
+			}
+			.btnLove{
+				top: 260px;
+				left: 110px;
+				width: 150px;
+			}
+			.btnJob{
+				top: 320px;
+				left: -140px;
+				width: 150px;
+			}
+			.btnWealth{
+				top: 380px;
+				left:-390px;
+				width: 150px;
+			}
+			.card{
+			background-color:royalblue;
+			width: 60px;
+			height: 90px;
+		}
+		.cardGroup{
+			top:280px;
+			left:310px;
+		}
+		.a{
+			top: -80px;
+			right:200px;
+		}
+		.b{
+			top: -80px;
+			right:210px;
+			box-shadow:0px 0px 5px black;
+		}
+		.c{
+			top: -80px;
+			right:220px;
+			box-shadow:0px 0px 5px black;
+		}
+		.d{
+			top: 20px;
+			right:350px;
+			box-shadow:0px 0px 5px black;
+		}
+		.e{
+			top: 20px;
+			right:370px;
+			box-shadow:0px 0px 5px black;
+		}
+
+		}
+		
+		[card-id].active{
+				border: solid 5px blanchedalmond;
+				box-sizing: 0 0 20px blanchedalmond;
+				transition: 0s;
+				}
+		/* @media screen () {
+			
+		} */
+	
+	</style>
+	<div class="main">
+		<div class="container position-relative">
+			<div class="space">
+					<img class="logo  position-absolute" src="../mary2.0-img/Marylogo-07.png" alt="">
+				<h1 class="open text-center position-absolute ">你的未來運勢</h1>
+				<p class=" known text-center position-absolute">想知道關於...</p>
+				<p id="again" class=" d-lg-flex d-lg-none position-absolute"> {再一次} </p>
+				<div id="Btns" class="btns d-lg-flex d-none position-absolute">
+					<div  class="btn love btnLove position-absolute ">
+						<img src="../mary2.0-img/Mary-12.png" alt="">
+					</div>
+					<div   class="btn job btnJob position-absolute ">
+						<img src="../mary2.0-img/Marybtn-13.png" alt="">
+					</div>
+					<div  class="btn wealth btnWealth position-absolute ">
+						<img src="../mary2.0-img/Marybtn-14.png" alt="">
+					</div>
+				</div>
+				
+				<img class="d-lg-none love btn btnLove position-absolute " src="../mary2.0-img/Mary-12.png" alt="">
+				<img class=" d-lg-none job btn btnJob position-absolute " src="../mary2.0-img/Marybtn-13.png" alt=""> 
+				<img class="d-lg-none wealth btn btnWealth position-absolute " src="../mary2.0-img/Marybtn-14.png" alt=""> 
+				
+				<div id="cards" class="cardGroup d-flex position-absolute d-none ">
+					<span class="card position-relative a" card-id="1"><img src="../mary2.0-img/MaryCard-04.png" alt=""></span>
+					<span class="card position-relative b" card-id="2"><img src="../mary2.0-img/MaryCard-04.png" alt=""></span>
+					<span class="card position-relative c" card-id="3"><img src="../mary2.0-img/MaryCard-04.png" alt=""></span>
+					<span class="card position-relative d" card-id="4"><img src="../mary2.0-img/MaryCard-04.png" alt=""></span>
+					<span class="card position-relative e" card-id="5"><img src="../mary2.0-img/MaryCard-04.png" alt=""></span>
+				</div>
+			</div>
+
+
+	</div>
+		<!--modal-->
+	<div class="modal" tabindex="-1" id="detaillModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title fs-1">Modal title</h5>
+					<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button> -->
+				</div>
+				<div class="modal-body">
+					<img src="" class="cardImg w-75 d-block ms-auto me-auto" alt="">
+					<p class="modalP mt-3">Modal body text goes here.</p>
+				</div>
+
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var btnLove=document.querySelector('.love');
+		var btnJob=document.querySelector('.job');
+		var btnＷealth=document.querySelector('.wealth');
+		var againBtn=document.querySelector('#again');
+		var flag=0;
+		btnLove.addEventListener('click',function () {
+			document.getElementById('cards').classList.remove('d-none');
+			document.getElementById('Btns').classList.add('d-lg-none');
+			document.querySelector('.open').classList.add('d-none');
+			randomSteps();
+			turnAround();
+			flag=0;
+		});
+		btnJob.addEventListener('click',function () {
+			document.getElementById('cards').classList.remove('d-none');
+			document.getElementById('Btns').classList.add('d-lg-none');
+			document.querySelector('.open').classList.add('d-none');
+			randomSteps();
+			turnAround();
+			flag=1;
+		});
+		btnＷealth.addEventListener('click',function () {
+			document.getElementById('cards').classList.remove('d-none');
+			document.getElementById('Btns').classList.add('d-lg-none');
+			document.querySelector('.open').classList.add('d-none');
+			randomSteps();
+			turnAround();
+			flag=3;
+		});
+		againBtn.addEventListener('click',function () {
+			document.getElementById('cards').classList.add('d-none');
+			document.getElementById('Btns').classList.remove('d-lg-none');
+			document.querySelector('.open').classList.remove('d-none');
+			document.querySelector('#again').classList.add('d-lg-none');
+		});
+			function randomSteps () {
+			speed=150;
+			let random=Math.floor(Math.random()*cardData.length)+1;
+			steps=random+(4*cardData.length);
+			allSteps=steps;
+		};
+
+			function turnAround(){
+		
+			console.log(steps);
+
+			
+			cards[current].classList.remove('active');
+			current++;
+			if (current>=cards.length)current=0; 
+			cards[current].classList.add('active');
+			steps--;
+			if (steps>0) {setTimeout(turnAround,speed);
+
+			}else{
+				setTarotCard();
+				document.querySelector('#again').classList.remove('d-lg-none');
+			}
+			
+		}
+		function setTarotCard(){
+			let tarroName=cardData[current].name;
+			//判斷是按了哪個按鈕 love job wealth
+			let mean='';
+
+			if (flag==0) {
+				mean=cardData[current].meanforLove;
+				console.log(mean);
+			}else if (flag==1) {
+				 mean=cardData[current].meanforJob;
+				console.log(mean);
+			}else{ mean=cardData[current].meanforWealth;
+				console.log(mean);
+			}
+			//抓模板
+			var myModal = new bootstrap.Modal(document.getElementById('detaillModal'), )
+			myModal.show();
+			let modal=document.querySelector('#detaillModal');
+			modal.querySelector('.modal-title').innerText=`${tarroName}`;
+			// modal.querySelector('.lolImg').src=`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${name}_0.jpg`;
+			modal.querySelector('p').innerText=`${mean}`;
+
+		}
+			let cardData=[
+			{id:'1',name:'King-國王',
+			meanforLove:'關於愛情-因鍥而不捨的精神獲得青睞、非常值得信賴的年長對象、心系戀人、懂得恰當的交往方式、主動追求愛情。',
+			meanforJob:'關於工作學習-鍥而不捨地學習、目標特別高、有堅定的信念、非常理性、考試特別的順利、善於管理、樂於助人、非常適合從政。',
+			meanforWealth:'關於財富-非常活躍的領導者、成為他人商洽的對象、有可信賴的朋友或學長、結交權貴、對現有財富特別的滿足。'
+			},
+			{id:'2',name:'Queen-王后',
+			meanforLove:'關於愛情-會得到成熟的戀情、談婚論嫁、成為異性矚目的焦點、輕鬆愉快的交往方式、令男性欽佩的女強人、富有母性的光輝。',
+			meanforJob:'關於工作學習-成績進步而且非常的優秀、在藝術領域頗有收穫、體面的工作、女強人、比較適合從事服裝服飾相關行業。',
+			meanforWealth:'關於財富-因性格開朗深得他人強烈的好感、受人矚目、成為聚會或派對的主角、獲得意外之財。'
+			},
+			{id:'3',name:' Hierophant-教皇',
+			meanforLove:'關於愛情-值得信賴的戀人、對戀情持謹慎態度、非常博愛、婚嫁、良緣、媒人給牽線搭橋、能夠安全交往的對象、年長的異性、逐漸加深的戀情、長久持續的交往。',
+			meanforJob:'關於工作學習-多聽他人的勸告、遇到良師就會使成績進步、出現對自己有幫助的人、與學長或同學一起用功而獲益、耐力特別的充足、思想保守、非常適合從事顧問或醫學工作以及以談話為主的工作。',
+			meanforWealth:'關於財富-獲得學長的賞識、獲得父母的資助、事事為朋友著想、容易遺失錢包。'
+			},
+			{id:'4',name:' Magician-魔法師',
+			meanforLove:'關於愛情-適合新戀情的展開、深受異性的歡迎、會品嚐到愛情的喜悅、輕率的交往、變換一下約會地點和方式就會給彼此帶來新鮮感。',
+			meanforJob:'關於工作學習-以全新的方式讀書獲得好的成績、事情處理的比較到位、會有比較高效的計劃、能夠充分發揮自己的才能、創意得到旁人認可、非常適合從事藝術方面的工作、喜歡充滿挑戰創新的工作。適合從事技術人員、播音員、大眾傳媒等相關工作或藝術設計工作。',
+			meanforWealth:'關於財富-會結交更多的朋友還會結識到良師益友、會遇到彼此互補的合作對象、能夠以合理的代價獲得想要的東西。'
+			},
+			{id:'5',name:'Fool-愚者',
+			meanforLove:'關於愛情-崇尚自由戀愛、從不顧及他人看法、以自己獨特的方式來獲得成功、輕易墜入愛河、追求浪漫多彩的愛情、會有獨特的戀人、默默等待交往機會。',
+			meanforJob:'關於工作學習-熱衷於事業或學業、以自己比較獨特的方式來取得意外的收穫、由於好奇心對當前的學業會產生比較濃厚的興趣、懂得把握重點、尋求比較簡單的方法、比較傾向於自由的工作氛圍、比較適合藝術類工作或是從事自由職業。',
+			meanforWealth:'關於財富-喜歡比較輕鬆的方式交友、在旅途中喜歡結交新的朋友、獨特的個性深受他人歡迎、投資上孤注一擲從不計後果。'
+			},
+		]
+
+		let steps=0;
+		let allSteps=0;
+		let current=0;
+		let speed;
+		let cards=document.querySelectorAll('[card-id]');
+		cards=Array.from(cards).sort((a,b)=>{
+			return a.getAttributeNode('card-id').value-b.getAttributeNode('card-id').value;
+				});
+
+
+	</script>
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* 共用 */
+.container{
+	max-width: 1200px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.navbar{z-index: 99;}
+.ordrerAdministrator {
+	margin-top: 80px;
+	/* border-radius: 50px 0px 50px 0px; 
+	background:radial-gradient(circle farthest-corner at bottom, #ffffff, #faaa54);
+	background-color: antiquewhite;   */
+}
+.menuBar{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #cccc;
+}
+.ownerimg{
+	width: 25%;
+	top: -150px;
+	right: 30px;
+}
+ul{
+	margin: 0px;
+}
+li,a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+a{
+	padding-bottom: 15px;
+	color: #000;
+}
+.menuBar>ul>li>a:active {
+	border-bottom: #000000 4px solid;
+}
+.addOrder{
+	width: 150px;
+	color: #D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+	background-color: #ffffff;
+}
+.stateItem {
+	font-size: 16px;
+	color: #D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+	padding: 3px 10px;
+}
+.addOrder:hover {
+	width: 150px;
+	color: #ffffff;
+	background:#D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+}
+.stateItem:hover {
+	font-size: 16px;
+	padding: 3px 10px;
+	color: #ffffff;
+	background: #D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+}
+.con {
+	font-size: 16px;
+	padding: 2px;
+}
+.addSpace{
+	width: 150px;
+	color: #049DD9;
+	border: #049DD9 1px solid;
+	border-radius: 50px;
+}
+.addSpace:hover {
+	width: 150px;
+	color: #ffffff;
+	background: #049DD9;
+	border-radius: 50px;
+}
+.detail{
+	border: 0px;
+	outline: none;
+	background-color: #ffffff;
+}
+.detail:hover {
+	color: #aaaaaa;
+}
+/* 版控區的ＩＣＯＮ */
+.bi-ui-checks,
+.bi-hand-thumbs-up-fill,
+.bi-hand-thumbs-down-fill,
+.bi-question-lg {
+	font-size: 50px;
+}
+
+@media screen and (max-width:767px){
+	.ownerimg {
+		width: 45%;
+		top: -120px;
+		right: 15px;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.all,
+	.reserve,
+	.refuse,
+	.notyet {
+		width: 49%;
+		margin-right: 5px;
+		box-sizing: border-box;
+	}
+	.stateFind{
+		justify-content: center;
+	}
+}
+
+.stateFind {
+	justify-content: end;
+}
+
+@media screen and (min-width:992px) {
+	.all,
+	.reserve,
+	.refuse {
+		width: 23%;
+		margin-right: 13px;
+		box-sizing: border-box;
+	}
+	.notyet {
+		width: 24%;}
+	.stateItemGroup{
+		justify-content: space-between;
+	}
+}
+
+.all {
+	background-color: #D9831A;
+	box-sizing: border-box;
+}
+
+.reserve {
+	background-color: lightseagreen;
+	box-sizing: border-box;
+
+}
+
+.refuse {
+	background-color: royalblue;
+	box-sizing: border-box;
+}
+
+.notyet {
+	background-color: firebrick;
+	box-sizing: border-box;
+}
+label {
+	font-size: 15px;
+}
+.panel>p{
+	height: 10px;
+}
+.filterbtn{
+	border-radius: 50px;
+}
+/* 新增空間 */
+.imgcontainer{
+	max-width: 870px;
+	max-height: 180px;
+}
+.imgcontainer>img{
+	width: 100%;
+}
+
+.edditSpace>.row>.col {
+	padding-right: 0;
+	padding-left: 0;
+	border: #aaaaaa solid 0.5px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.imgcontainer>img {
+	border-radius: 10px 10px 0px 0px;
+}
+
+.edditBtn {
+	padding: 30px;
+
+}
+
+.textSpace {
+	padding: 10px 10px 0px 10px;
+}
+
+.fas {
+	font-size: 25px;
+	color: #555555;
+}
+
+@media screen and (min-width:992px) {
+	.edditSpace>.row>.col {
+		padding-right: 0;
+		padding-left: 0;
+		border: #aaaaaa solid 0.5px;
+		width: 47%;
+		margin-right: 16px;
+		border-radius: 10px;
+	}
+
+	.imgcontainer>img {
+		border-radius: 10px 10px 0px 0px  ;
+	}
+	.edditBtn{
+		padding: 30px ;
+		
+	}
+	.textSpace{
+		padding: 10px 10px 0px 10px;
+	}
+	.fas{
+		font-size: 25px;
+		color: #555555;
+	}
+	.edditSpace {
+		margin-left: 30px;
+
+	}	
+}
+.fa-chevron-circle-down:hover {
+
+	transform: rotate(180deg);
+}
+/* 表格的icon */
+.fa-shapes,
+.fa-poll-h,
+.fa-trash-alt,
+.fa-edit {
+	font-size: 25px;
+}

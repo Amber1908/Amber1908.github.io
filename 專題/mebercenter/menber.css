@@ -32,17 +32,154 @@ li,a{
 li{
 	list-style: none;
 }
-a{
+
+.menuBar>ul>li>a{
+	color: black;
+	background-color: #ffffff;
+}
+.menuBar>ul>li>a:link {
+	color: black;
+	background-color: #ffffff;
+}
+
+.menuBar>ul>li>a:active {
 	padding-bottom: 15px;
 	color: #000;
-}
-.menuBar>ul>li>a:active {
+	background-color: #ffffff;
 	border-bottom: #000000 4px solid;
 }
 .addOrder{
 	width: 150px;
 	color: #D9831A;
 	border: #D9831A 1px solid;
+	border-radius: 50px;
+	background-color: #ffffff;
+}
+.filterbtnq {
+	font-size: 16px;
+	padding: 3px 10px 3px 10px;
+	color: #333333;
+	border-radius: 50px;
+	background-color: #ffffff;
+	border: #333333 solid 1px;
+}
+.filterbtng {
+	font-size: 16px;
+	padding:10px 0px  0px 70px ;
+	text-align: center;
+	color: #333333;
+	border-radius: 50px;
+	background-color: #ffffff;
+	border: #333333 solid 1px;
+}
+.form-check-label{
+	margin-top: 2px;
+}
+.checkbox{
+	margin-top: 20px;
+	margin-left: 90px;
+}
+.all {
+	width: 24%;
+	background-color: #D9831A;
+	box-sizing: border-box;
+}
+	.reserve {
+		width: 24%;
+		background-color: lightseagreen;
+		box-sizing: border-box;
+	}
+
+	.refuse {
+		width: 24%;
+		background-color: royalblue;
+		box-sizing: border-box;
+	}
+
+	.notyet {
+		width: 24%;
+		background-color: firebrick;
+		box-sizing: border-box;
+	}
+
+@media screen and (min-width:768px) {
+	.filterbtn {
+		font-size: 16px;
+		padding: 3px 10px 3px 10px;
+		color: #333333;
+		border-radius: 50px;
+		background-color: #ffffff;
+		margin-left: 0%;
+		border: #333333 solid 1px;
+	}
+	.filterbtnq {
+		padding-top: 10PX;
+	}
+}
+@media screen and (min-width:992px) {
+	.filterbtn {
+		font-size: 16px;
+		padding: 3px 10px 3px 10px;
+		color: #333333;
+		border-radius: 50px;
+		background-color: #ffffff;
+		margin-left: 0%;
+		border: #333333 solid 1px;
+	}
+	
+	.checkbox {
+		margin-top: 20px;
+		margin-left: 80px;
+	}
+	
+}
+
+@media screen and (max-width:767px) {
+	.filterbtn {
+		font-size: 16px;
+		padding: 3px 10px 3px 10px;
+		color: #333333;
+		border-radius: 50px;
+		background-color: #ffffff;
+		margin-left: 68%;
+		border: #333333 solid 1px;
+	}
+	.filterbtnq {
+		padding-top: 10PX;
+	}
+	.all {
+		width: 100%;
+		background-color: #D9831A;
+		box-sizing: border-box;
+	}
+	.reserve {
+		width: 100%;
+		background-color: lightseagreen;
+		box-sizing: border-box;
+	}
+
+	.refuse {
+		width: 100%;
+		background-color: royalblue;
+		box-sizing: border-box;
+	}
+
+	.notyet {
+		width: 100%;
+		background-color: firebrick;
+		box-sizing: border-box;
+	}
+	.fa-shapes {
+		color: #D9831A;
+	}
+}
+
+.excelbtn {
+	font-size: 16px;
+	width: 150px;
+	padding: 3px 10px 3px 10px;
+	color: #05840e;
+	border:#05840e solid 1px ;
 	border-radius: 50px;
 	background-color: #ffffff;
 }
@@ -97,7 +234,23 @@ a{
 .bi-hand-thumbs-up-fill,
 .bi-hand-thumbs-down-fill,
 .bi-question-lg {
-	font-size: 50px;
+	font-size: 40px;
+	color: #ffffff;
+}
+/* 預定單管理的表單區 */
+.tablePart> .row{
+	margin-left: 0PX;
+}
+
+/* 我的場地的dropdrow */
+.SpacedRopdownMenu{
+	z-index: 98;
+	padding: 20px;
+	top:480px;
+	right: 35px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width:767px){
@@ -106,74 +259,70 @@ a{
 		top: -120px;
 		right: 15px;
 	}
+	
+	.containerpanelGroup>.row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.SpacedRopdownMenu {
+		z-index: 98;
+		padding: 20px;
+		top: 235px;
+		right: 36px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+	}
+	
 }
 
 @media screen and (min-width:768px) {
-	.all,
-	.reserve,
-	.refuse,
-	.notyet {
-		width: 49%;
-		margin-right: 5px;
-		box-sizing: border-box;
-	}
 	.stateFind{
 		justify-content: center;
 	}
 }
-
 .stateFind {
 	justify-content: end;
 }
-
+.textSpace {
+	padding: 10px 10px 0px 10px;
+}
 @media screen and (min-width:992px) {
-	.all,
-	.reserve,
-	.refuse {
-		width: 23%;
-		margin-right: 13px;
-		box-sizing: border-box;
-	}
-	.notyet {
-		width: 24%;}
+	
 	.stateItemGroup{
 		justify-content: space-between;
 	}
+	.SpacedRopdownMenu {
+		z-index: 98;
+		padding: 20px;
+		top: 385px;
+		right: 35px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+	}
 }
-
-.all {
-	background-color: #D9831A;
-	box-sizing: border-box;
-}
-
-.reserve {
-	background-color: lightseagreen;
-	box-sizing: border-box;
-
-}
-
-.refuse {
-	background-color: royalblue;
-	box-sizing: border-box;
-}
-
-.notyet {
-	background-color: firebrick;
-	box-sizing: border-box;
+.containerpanelGroup>.row {
+	margin-left: 0px;
+	margin-right: 0px;
 }
 label {
 	font-size: 15px;
 }
+
 .panel>p{
 	height: 10px;
+	color: #fff;
 }
+
 .filterbtn{
 	border-radius: 50px;
 }
 /* 新增空間 */
 .imgcontainer{
 	max-width: 870px;
-	max-height: 180px;
+	max-height: 350px;
 }
 .imgcontainer>img{
 	width: 100%;
@@ -193,18 +342,19 @@ label {
 
 .edditBtn {
 	padding: 30px;
-
-}
-
-.textSpace {
-	padding: 10px 10px 0px 10px;
 }
 
 .fas {
 	font-size: 25px;
 	color: #555555;
 }
+@media screen and (min-width:767px) {
 
+	.detailSpace {
+		margin-top: 20px;
+		padding-top: 60px;
+	}
+}
 @media screen and (min-width:992px) {
 	.edditSpace>.row>.col {
 		padding-right: 0;
@@ -231,17 +381,17 @@ label {
 	}
 	.edditSpace {
 		margin-left: 30px;
-
 	}	
 }
-.fa-chevron-circle-down:hover {
 
+.fa-chevron-circle-down:hover {
 	transform: rotate(180deg);
 }
 /* 表格的icon */
 .fa-shapes,
 .fa-poll-h,
 .fa-trash-alt,
-.fa-edit {
+.fa-edit,
+.bi-clipboard-data {
 	font-size: 25px;
 }

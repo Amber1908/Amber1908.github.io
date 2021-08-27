@@ -75,174 +75,20 @@
     </nav>
 
 
-	<div class="main">
+	<div class="main ">
 		<div class="container ordrerAdministrator">
-			<div class="Administrator position-relative mt-5">
-				<img class="ownerimg position-absolute  d-md-block d-lg-block " src="../mebercenter-img/owner.svg" alt="">
-				<h5> <i class="bi bi-twitch fs-3 me-2 "></i></i>聯絡單管理</h5>
-			</div>
-			<div class="menuBar mt-4 mb-4 ">
+			<div class="menuBarAddspace mt-4 mb-4 ">
 				<ul class="nav d-flex">
 					<li class="me-3 "><a class="menuBarReserve" href="#">預定單</a></li>
 					<li class=" me-3"><a  class="menuBarconnection" href="#">聯絡單</a></li>
 					<li class=" me-3"><a class=" menuBarMyspace" href="#">我的空間</a></li>
 				</ul>
 			</div>
-			
-			<div class="row  row-cols-1 state d-flex  justify-content-between  ">
-				<div class="col col-md-12 col-lg-8  stateItemGroup d-flex  mt-1 mb-3 flex-wrap">
-					<div class="stateItem  text-center ">未處理</div>
-					<div class="stateItem  text-center ">考慮中</div>
-					<div class="stateItem text-center ">尚未開始</div>
-					<div class="stateItem text-center ">本月活動</div>
-					<div class="stateItem  text-center ">已經結束活動</div>
-					<div class="stateItem  text-center ">對帳資訊</div>
-					<div class="stateItem text-center ">付款紀錄</div>
-				</div>
-				<div class="stateFind  col col-lg-3 d-flex right-wrap mt-1 justify-content-end" style="height: 30px;">
-					<input type="text" id="keyWord" class="form-control  w-50 " aria-describedby="passwordHelpInline" placeholder="關鍵字">
-				<div class="filterbtn w-25 text-light bg-dark ms-3 con text-center ">搜尋</div>
 
-				
-			</div>
-
-			</div>
-			<div class="selectPart container  ">
-				<div class=" d-inline row d-lg-flex">
-					<div class="col-12 col-lg-2 mt-3">
-						<select class="form-select selectZone" aria-label="Default select example">
-							<option selected>全部</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-					<div class="col-12 col-lg-2 mt-3">
-						<select class="form-select selectActivity" aria-label="Default select example">
-							<option selected>無活動</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="input-group mt-3 ">
-							<input type="date" class="form-control" placeholder="日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
-							<span class="input-group-text" id="basic-addon2">至</span>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="input-group mt-3 ">
-							<input type="date" class="form-control" placeholder="日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
-							<span class="input-group-text" id="basic-addon2">止</span>
-						</div>
-					</div>
-					<div class="col">
-							<button class="filterbtn mt-3 text-center"><i class="bi bi-filter-circle me-1"></i>篩選</button>
-					</div>
-				</div>
- 			</div>
-			
-
-			<div class="tablepart m-3 d-lg-none overflow-hidden overflow-scroll">	
-				<div class="col">
-					<button class="excelbtn  text-center"><i class="bi bi-file-earmark-excel-fill me-1 "></i>輸出Excel檔</button>
-				</div>
-
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th scope="col">訂單編號</th>
-							<th scope="col">訂單描述</th>
-							<th scope="col">場地</th>
-							<th scope="col">姓名</th>
-							<th scope="col">活動日期</th>
-							<th scope="col">電話</th>
-							<th scope="col">訂單金額</th>
-							<th scope="col">狀態</th>
-							<th scope="col">下訂日期</th>
-							<th scope="col">處理</th>
-							<th scope="col">詳情</th>
-							<th scope="col">刪除</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td >有對外窗</td>
-							<td>小樹屋</td>
-							<td>Mark</td>
-							<td>2021/08/30</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>處理中</td>
-							<td>2021/08/24</td>
-							<td><i class="fas fa-shapes"></i></td>
-							<td><i class="fas fa-poll-h"></i></td>
-							<td><i class="fas fa-trash-alt"></i></td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>有投影機</td>
-							<td>大樹屋</td>
-							<td>Linda</td>
-							<td>2021/09/03</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>處理中</td>
-							<td>2021/08/30</td>
-							<td><i class="fas fa-shapes"></i></td>
-							<td><i class="fas fa-poll-h"></i></td>
-							<td><i class="fas fa-trash-alt"></i></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="tablepart m-3 container d-lg-block d-none">
-				<div class="col">
-					<button class="excelbtn  text-center"><i class="bi bi-file-earmark-excel-fill me-1 "></i>輸出Excel檔</button>
-				</div>
-
-				<table class="table table-hover" >
-					<thead>
-						<tr>
-							<th scope="col">場地名稱</th>
-							<th scope="col">姓名</th>
-							<th scope="col">預定日期</th>
-							<th scope="col">電話</th>
-							<th scope="col">金額</th>
-							<th scope="col">實際金額</th>
-							<th scope="col">狀態</th>
-							<th scope="col">編輯</th>
-						</tr>
-					</thead>
-					<tbody >
-						<tr>
-							<th scope="row">會議室</th>
-							<td>Mark</td>
-							<td>2021/08/30</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>3000</td>
-							<td>處理中</td>
-							<td><i class="fas fa-edit"></i></td>
-						</tr>
-						<tr>
-							<th scope="row">會議室</th>
-							<td>Linda</td>
-							<td>2021/08/30</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>3000</td>
-							<td>處理中</td>
-							<td><i class="fas fa-edit"></i></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-		</div>
 	</div>
+
+
+
 
 <!-- footer -->
     <footer class="w-100 px-3 pb-5 py-md-5">
@@ -282,7 +128,6 @@
         </div>
 		</div>
     </footer>
-
 
 
 

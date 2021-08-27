@@ -8,7 +8,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../mebercenter/menber.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	<!-- fontawesome CDN -->
@@ -18,67 +17,141 @@
 </head>
 <body>
 <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 p-lg-3 position-fixed w-100 top-0">
-		<div class="container-fluid">
-        <a class="navbar-brand p-0" href="#">
-			<img src="../ZONERardar-02.svg" alt="logo" class="d-inline-block logo">
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-				<a class="nav-link" href="#">找場地</a>
-            </li>
-            <li class="nav-item">
-				<a class="nav-link" href="#">成為場地主</a>
-            </li>
-            <li class="nav-item">
-				<a class="nav-link" href="#">常見問答</a>
-            </li>
-            <!-- 未登入時出現 -->
-            <li class="nav-item">
-				<a class="nav-link" href="#">登入/註冊</a>
-            </li>
-            <!-- 登入後，手機+平板直出現 -->
-            <li class="nav-item d-lg-none">
-				<div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						<i class="far fa-user">&nbsp;&nbsp;我的帳號</i>
-					</button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-					<div class="accordion-body">
-						<a class="nav-link" href="#">會員中心</a>
-						<a class="nav-link" href="#">登出</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-lg-3 position-fixed w-100 top-0">
+        <div class="container-fluid">
+			<a class="navbar-brand p-0" href="#">
+            <img src="../navbar-footer/ZONERadar.png" alt="logo" class="d-inline-block logo">
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#">找場地</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">成為場地主</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">常見問答</a>
+				</li>
+			<!-- 未登入時出現 -->
+			<li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#login-modal">登入/註冊</a>
+			</li>
+
+            
+			<!-- 登入後，手機+平板直出現 -->
+			<li class="nav-item d-lg-none">
+                <div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<i class="far fa-user position-relative">&nbsp;&nbsp;我的帳號</i>
+						</button>
+				</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+						<div class="accordion-body p-0">
+							<a class="nav-link" href="#">會員中心</a>
+							<a class="nav-link" href="#">登出</a>
 					</div>
+                  </div>
                 </div>
-				</div>
-            </li>
-            <!-- 登入後，平板橫+電腦出現 -->
-            <li class="nav-item d-none d-lg-block">
-				<div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-					<i class="far fa-user"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
-					<li><a class="dropdown-item" href="#">會員中心</a></li>
-					<li><a class="dropdown-item" href="#">登出</a></li>
-                </ul>
-				</div>
-            </li>
-			</ul>
+              </li>
+              <!-- 登入後，平板橫+電腦出現 -->
+              <li class="nav-item d-none d-lg-block">
+                <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="far fa-user position-relative"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">會員中心</a></li>
+                    <li><a class="dropdown-item" href="#">登出</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-		</div>
-    </nav>
-	<!-- 場地管理頁籤 -->
+      </nav>
+
+      <!-- 登入Modal -->
+      <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center text-secondary">
+                <h5 class="fw-bolder">歡迎回來！</h5>
+                <p>還沒有ZONERadar帳號？<a href="#" id="a-register-modal" data-bs-toggle="modal" data-bs-target="#register-modal">立即註冊</a></p>
+                <a href="#" id="third-register-google" class="third-register d-block mb-2 text-decoration-none text-secondary">
+                  <img src="https://storage.googleapis.com/support-kms-prod/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK" alt="google">
+                  Google 登入
+                </a>
+                <a href="#" id="third-register-facebook" class="third-register d-block mb-3 text-decoration-none text-secondary">
+                  <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook">
+                  Facebook 登入
+                </a>
+                <div class="email-register-text mb-3 d-flex flex-row align-items-center justify-content-center">或使用email</div>
+                <form action="#" name="login-form">
+                  <input type="email" id="input-email-login" class="form-control form-control-lg d-block mb-2" placeholder="example@email.com" aria-label="email" aria-describedby="basic-addon1" required>
+                  <input type="password" id="input-password-login" class="form-control form-control-lg d-block mb-3" placeholder="密碼" aria-label="password" aria-describedby="basic-addon2" required>
+                  <div class="d-flex flex-row justify-content-around mb-3">
+                    <label for="remember-me">
+                      <input type="checkbox" id="remember-me">
+                      記住我
+                    </label>                       
+                    <a href="#" id="forget-password">忘記密碼？</a>
+                  </div>
+                  <a href="#" id="login-submit" class="d-block text-decoration-none text-white mb-3">登入</a>
+                </form>
+                <div class="modal-footer justify-content-center">
+                  <div class="col-2 col-md-3">
+                  <i class="fas fa-dollar-sign position-relative"></i>
+                </div>
+                <div class="text-start">
+                  <span class="d-block">出租你的空間，賺取報酬！</span>
+                  <a href="#" id="become-lessor">成為場地主→</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 註冊Modal -->
+      <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center text-secondary pb-1">
+                  <h5 class="fw-bolder">歡迎加入！</h5>
+                  <p>已有ZONERadar帳號？<a href="#" id="a-login-modal" data-bs-toggle="modal" data-bs-target="#login-modal">登入</a></p>
+                  <a href="#" id="third-register-google" class="third-register d-block mb-2 text-decoration-none text-secondary">
+                      <img src="https://storage.googleapis.com/support-kms-prod/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK" alt="google">
+                      Google 註冊
+                  </a>
+                  <a href="#" id="third-register-facebook" class="third-register d-block mb-3 text-decoration-none text-secondary">
+                      <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook">
+                      Facebook 註冊
+                  </a>
+                  <div class="email-register-text mb-3 d-flex flex-row align-items-center justify-content-center">或使用email註冊</div>
+                  <form action="#" name="register-form">
+                      <input type="email" id="input-email-register" class="form-control form-control-lg d-block mb-3" placeholder="您的Email" aria-label="email" aria-describedby="basic-addon1" required>
+                      <a href="#" id="register-submit" class="d-block text-decoration-none text-white mb-3">以Email註冊</a>
+                  </form>
+              </div>
+          </div>
+        </div>
+    </div>	<!-- 場地管理頁籤 -->
 	<div class="main ">
 		<div class="container ordrerAdministrator">
 			<div class="Administrator position-relative mt-5">
 				<img class="ownerimg position-absolute  d-md-block d-lg-block " src="../mebercenter-img/owner.svg" alt="">
-				<h5> <i class="bi bi-shop fs-4 me-2  "></i>場地管理</h5>
+				<h5><i class="bi bi-clipboard-data fs-4 me-2"></i>預定單管理</h5>
 			</div>
 			<div class="menuBar mt-4 mb-4 ">
 				<ul class="nav d-flex">
@@ -87,252 +160,308 @@
 					<li class="me-3"><a class=" menuBarMyspace" href="#">我的空間</a></li>
 				</ul>
 			</div>
-			
 			<div class="orders d-flex justify-content-between mt-3 mb-3 ">
 				<button class="addOrder text-center fs-6"><i class="bi bi-plus-circle-fill me-2"></i>新增預定單</button>
 				<button class="detail">訂單明細<i class="bi bi-arrow-right"></i></button>
 			</div>
-
-			<!-- 控制面板區 -->
-			<div class="container panelGroup m-auto">
-				<div class="row g-2 g-md-2 ">
-					<div class="all text-white bg-gradient mt-1 rounded-2 col-12 col-md-6 col-lg-3 d-flex justify-content-between">
+			<div class="containerpanelGroup">
+				<div class="panel row d-flex justify-content-lg-between justify-content-md-around">
+					<div class="all col col-12 col-lg-3   mb-1 rounded-2 d-flex justify-content-around"> 
 						<i class="bi bi-ui-checks"></i>
-						<div class="panel pt-1 ">
-							<p>1</p>
-							<p>所有筆數</p>
-						</div>
-					</div>
-					<div class="reserve text-white bg-gradient mt-1 rounded-2  col-12 col-md-6 col-lg-3 d-flex justify-content-between">
-						<i class="bi bi-hand-thumbs-up-fill"></i>
-						<div class="panel pt-1 ">
-							<p>0</p>
-							<p>接受預訂</p>
-						</div>
-					</div>
-					<div class="refuse text-white bg-gradient mt-1 rounded-2  col-12 col-md-6 col-lg-3 d-flex justify-content-between">
-					<i class="bi bi-hand-thumbs-down-fill"></i>
-						<div class="panel pt-1 ">
-							<p>0</p>
-							<p>拒絕預訂</p>
-						</div>
-					</div>
-					<div class="notyet text-white bg-gradient mt-1 rounded-2  col-12 col-md-6 col-lg-3 d-flex justify-content-between">
-						<i class="bi bi-question-lg"></i>
-						<div class="panel pt-1 ">
-							<p>0</p>
-							<p>尚未處理</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			</div>
-			<div class="selectPart container  ">
-				<div class=" d-inline row d-lg-flex">
-					<div class="col-12 col-lg-2 mt-3">
-						<select class="selectZone form-select " aria-label="Default select example">
-							<option selected>全部</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-					<div class="col-12 col-lg-2 mt-3">
-						<select class="selectActivity form-select" aria-label="Default select example">
-							<option selected>無活動</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="input-group mt-3 ">
-							<input type="date" class="form-control" placeholder="日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
-							<span class="input-group-text" id="basic-addon2">至</span>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4">
-						<div class="input-group mt-3 ">
-							<input type="date" class="form-control" placeholder="日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
-							<span class="input-group-text" id="basic-addon2">止</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col-12 col-lg-4 mt-3  d-flex align-self-end">
-							<input type="text" id="keyWord" class="form-control " aria-describedby="passwordHelpInline" placeholder="關鍵字">
-							<div class="filterbtn w-50 text-light bg-dark ms-3  text-center p-2">篩選</div>
-						</div>
-					</div>
-				</div>
-		
-				<div class="container mt-1">
-					<div class="row row-cols-1 row-cols-lg-2 ">
-						<div class="col"></div>
-						<div class="col">
-							<div class="onlynotyet ">
-								<div class="form-check text-end ">
-								<input class="radio  " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-								<label class="form-check-label  d-inline-block" for="flexRadioDefault1">
-									僅顯示未處理訂單
-								</label>
-								</div>
+							<div class="panel ">
+								<p>1</p>
+								<p>所有筆數</p>
 							</div>
-						</div>
+					</div>
+					<div class="reserve col col-12 col-lg-3  mb-1 rounded-2 d-flex justify-content-around "> 
+						<i class="bi bi-hand-thumbs-up-fill"></i>
+							<div class="panel ">
+								<p>1</p>
+								<p>接受預訂</p>
+							</div>
+					</div>
+					<div class="refuse col col-12 col-lg-3 mb-1 rounded-2 d-flex justify-content-around"> 
+						<i class="bi bi-hand-thumbs-down-fill"></i>
+							<div class="panel ">
+								<p>1</p>
+								<p>拒絕預訂</p>
+							</div>
+					</div>
+					<div class="notyet col col-12  col-lg-3 mb-1 rounded-2 d-flex justify-content-around"> 
+						<i class="bi bi-question-lg"></i>
+							<div class="panel ">
+								<p>1</p>
+								<p>尚未處理</p>
+							</div>
 					</div>
 				</div>
 			</div>
-			<div class="tablepart m-3 d-lg-none overflow-hidden overflow-scroll">
-				<table class="table " >
-					<thead>
-						<tr>
-							<th scope="col">訂單編號</th>
-							<th scope="col">訂單描述</th>
-							<th scope="col">場地</th>
-							<th scope="col">姓名</th>
-							<th scope="col">活動日期</th>
-							<th scope="col">電話</th>
-							<th scope="col">訂單金額</th>
-							<th scope="col">狀態</th>
-							<th scope="col">下訂日期</th>
-							<th scope="col">處理</th>
-							<th scope="col">詳情</th>
-							<th scope="col">刪除</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td >有對外窗</td>
-							<td>小樹屋</td>
-							<td>Mark</td>
-							<td>2021/08/30</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>處理中</td>
-							<td>2021/08/24</td>
-							<td><i class="fas fa-shapes"></i></td>
-							<td><i class="fas fa-poll-h"></i></td>
-							<td><i class="fas fa-trash-alt"></i></td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>有投影機</td>
-							<td>大樹屋</td>
-							<td>Linda</td>
-							<td>2021/09/03</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>處理中</td>
-							<td>2021/08/30</td>
-							<td><i class="fas fa-shapes"></i></td>
-							<td><i class="fas fa-poll-h"></i></td>
-							<td><i class="fas fa-trash-alt"></i></td>
-						</tr>
-
-					</tbody>
-				</table>
-			</div>
-			<div class="tablepart m-3 container d-lg-block d-none">
-				<table class="table ">
-					<thead>
-						<tr>
-							<th scope="col">訂單編號</th>
-							<th scope="col">訂單描述</th>
-							<th scope="col">場地</th>
-							<th scope="col">姓名</th>
-							<th scope="col">活動日期</th>
-							<th scope="col">電話</th>
-							<th scope="col">訂單金額</th>
-							<th scope="col">狀態</th>
-							<th scope="col">下訂日期</th>
-							<th scope="col">處理</th>
-							<th scope="col">詳情</th>
-							<th scope="col">刪除</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>有對外窗</td>
-							<td>小樹屋</td>
-							<td>Mark</td>
-							<td>2021/08/30</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>處理中</td>
-							<td>2021/08/24</td>
-							<td><i class="fas fa-shapes"></i></td>
-							<td><i class="fas fa-poll-h"></i></td>
-							<td><i class="fas fa-trash-alt"></i></td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>有投影機</td>
-							<td>大樹屋</td>
-							<td>Linda</td>
-							<td>2021/09/03</td>
-							<td>0912345678</td>
-							<td>2000</td>
-							<td>處理中</td>
-							<td>2021/08/30</td>
-							<td><i class="fas fa-shapes"></i></td>
-							<td><i class="fas fa-poll-h"></i></td>
-							<td><i class="fas fa-trash-alt"></i></td>
-						</tr>
-
-					</tbody>
-				</table>
-			</div>
-
 		</div>
 	</div>
-
-<!-- footer -->
-    <footer class="w-100 px-3 pb-5 py-md-5">
-		<div class="container">
-        <div class="row text-center justify-content-md-between">
-			<div class="col-12 col-md-3 col-lg-3 py-4 ps-4 text-start">
-            <img src="../ZONERardar-02.svg" alt="logo" class="d-md-block logo">
+	<!-- 搜尋區 -->
+	<div class="selectPart container">
+		<div class=" row">
+			<h5>訂單查詢</h5>
+			<div class="col-12 col-lg-2 mt-3">
+				<select class="form-select selectZone" aria-label="Default select example">
+					<option selected>全部</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
 			</div>
-			<div class="col-4 col-md-2 col-lg-2">
-            <p>關於我們</p>
-            <ul class="ps-0 list-unstyled">
-				<li class="mb-1 mb-lg-2"><a href="#">關於我們</a></li>
-				<li class="mb-1 mb-lg-2"><a href="#">服務條款</a></li>
-            </ul>
+			<div class="col-12 col-lg-2 mt-3">
+				<select class="form-select selectActivity" aria-label="Default select example">
+					<option selected>無活動</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
 			</div>
-			<div class="col-4 col-md-2 col-lg-2">
-            <p>客服中心</p>
-            <ul class="ps-0 list-unstyled">
-				<li class="mb-1 mb-lg-2"><a href="#">常見問題</a></li>
-				<li class="mb-1 mb-lg-2"><a href="#">聯絡我們</a></li>
-            </ul>
+			<div class="col-12 col-lg-4">
+				<div class="input-group mt-3 ">
+					<input type="date" class="form-control" placeholder="日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					<span class="input-group-text" id="basic-addon2">至</span>
+				</div>
 			</div>
-			<div class="col-4 col-md-2 col-lg-2">
-            <p>媒體報導</p>
-            <ul class="ps-0 list-unstyled">
-				<li class="mb-1 mb-lg-2"><a href="#">AppWorks</a></li>
-				<li class="mb-1 mb-lg-2"><a href="#">數位時代</a></li>
-				<li class="mb-1 mb-lg-2"><a href="#">Inside</a></li>
-            </ul>
+			<div class="col-12 col-lg-4">
+				<div class="input-group mt-3 ">
+					<input type="date" class="form-control" placeholder="日期" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					<span class="input-group-text" id="basic-addon2">止</span>
+				</div>
 			</div>
-			<div class="col-4 col-md-2 col-lg-2 social mb-3">
-            <a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
-            <a href="#"><div class="ms-1 ms-lg-2"><i class="fab fa-line"></div></i></a>
-			</div>
-			<span class="text-start mb-3 px-4">本網站的所有資訊均由用戶提供，如有觸犯您的知識版權，請聯繫我們，我們會於接到投訴後即時處理。</span>
-			<span class="text-start px-4">&copy; pickone 挑場地 2014 All Rights Reserved</span>
-        </div>
 		</div>
-    </footer>
+	</div>
+	<div class="container">
+		<div class="row ">
+			<div class="stateFind col col-12 d-lg-none d-flex ">
+			<input type="text" id="keyWord" class="form-control  mt-3 me-3" aria-describedby="passwordHelpInline" placeholder="關鍵字">
+			<div class="col  filterbtnq col-4 d-lg-none  col-lg-3  text-light bg-dark mt-3  text-center  ">搜尋</div>
+		</div>
+		<div class="row">
+			<div class=" form-check col-12 col-lg-4 d-flex mt-3 ms-3 justify-content-end d-lg-none ">
+				<input class="form-check-input me-2 align-content-center " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+					<label class="form-check-label  " for="flexRadioDefault1">
+						僅顯示未處理訂單
+					</label>
+			</div>
+		</div>
+	</div>
+	<div class="row  mb-3">
+			<div class=" col-lg-7 col-md-7  d-lg-flex d-none ">
+				<input type="text" id="keyWord" class="form-control  mt-1 " aria-describedby="passwordHelpInline" placeholder="關鍵字">
+			</div>
+			<div class="col  filterbtng  col-lg-2 col-md-2 d-lg-flex d-none   text-light bg-dark mt-1 ">搜尋</div>
+			<div class=" form-check checkbox col-lg-2  col-md-2 d-lg-flex justify-content-end d-none ">
+				<input class="form-check-input me-2 align-content-center mt-lg-1  " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+					<label class="form-check-label  " for="flexRadioDefault1">
+						僅顯示未處理訂單
+					</label>
+			</div>
+	</div>
+	<!-- 表單區 -->
+	<div class="container tablePart mb-lg-4 mt-5 d-xl-block d-none"style=" width: 1150px;
+    padding-left: 0px;
+    padding-right: 0px;">
+		
+		<table class="table table-hover ">
+			<thead>
+				<tr>
+					<th scope="col">訂單編號</th>
+					<th scope="col">訂單描述</th>
+					<th scope="col">場地</th>
+					<th scope="col">姓名</th>
+					<th scope="col">活動日期</th>
+					<th scope="col">電話</th>
+					<th scope="col">訂單金額</th>
+					<th scope="col">狀態</th>
+					<th scope="col">下訂日期</th>
+					<th scope="col">處理</th>
+					<th scope="col">詳情</th>
+					<th scope="col">刪除</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>有對外窗</td>
+					<td>小樹屋</td>
+					<td>Mark</td>
+					<td>2021/08/30</td>
+					<td>0912345678</td>
+					<td>2000</td>
+					<td>處理中</td>
+					<td>2021/08/24</td>
+					<td><i class="fas fa-shapes"></i></td>
+					<td><i class="fas fa-poll-h"></i></td>
+					<td><i class="fas fa-trash-alt"></i></td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>有投影機</td>
+					<td>大樹屋</td>
+					<td>Linda</td>
+					<td>2021/09/03</td>
+					<td>0912345678</td>
+					<td>2000</td>
+					<td>處理中</td>
+					<td>2021/08/30</td>
+					<td><i class="fas fa-shapes"></i></td>
+					<td><i class="fas fa-poll-h"></i></td>
+					<td><i class="fas fa-trash-alt"></i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 手機版的表格用手風琴 -->
+	<div class="container accordionPart d-xl-none">
+		<h5>查詢結果</h5>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<p>訂單編號:<span>1</span></p>
+				</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p>訂單描述: <span>有對外窗</span> </p>
+						<p>場地: <span>會議室</span></p>
+						<p>姓名: <span>王小明</span></p>
+						<p>活動日期: <span>2021-08-29</span></p>
+						<p>電話: <span>0912345678</span></p>
+						<p>訂單金額: <span>2000</span></p>
+						<p>下訂日期: <span>2021-08-01</span></p>
+						<div class="div d-flex mt-5 ">
+							<span>
+								<i class="fas fa-shapes accordionIcon "></i> <a class="me-1" href="#">處理</a> 
+							</span>
+							<span>
+								<i class="fas fa-poll-h accordionIcon"></i> <a class="me-1" href="#">詳情</a> 
+							</span>
+							<span>
+								<i class="fas fa-trash-alt accordionIcon"></i> <a class="me-1" href="#"> 刪除</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<p>訂單編號:<span>2</span></p>
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p>訂單描述: <span>有對外窗</span> </p>
+						<p>場地: <span>會議室</span></p>
+						<p>姓名: <span>王小明</span></p>
+						<p>活動日期: <span>2021-08-29</span></p>
+						<p>電話: <span>0912345678</span></p>
+						<p>訂單金額: <span>2000</span></p>
+						<p>下訂日期: <span>2021-08-01</span></p>
+						<div class="div d-flex mt-5 ">
+							<span>
+								<i class="fas fa-shapes accordionIcon "></i> <a class="me-1" href="#">處理</a> 
+							</span>
+							<span>
+								<i class="fas fa-poll-h accordionIcon"></i> <a class="me-1" href="#">詳情</a> 
+							</span>
+							<span>
+								<i class="fas fa-trash-alt accordionIcon"></i> <a class="me-1" href="#"> 刪除</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<p>訂單編號:<span>3</span></p>
+					</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p>訂單描述: <span>有對外窗</span> </p>
+						<p>場地: <span>會議室</span></p>
+						<p>姓名: <span>王小明</span></p>
+						<p>活動日期: <span>2021-08-29</span></p>
+						<p>電話: <span>0912345678</span></p>
+						<p>訂單金額: <span>2000</span></p>
+						<p>下訂日期: <span>2021-08-01</span></p>
+						<div class="div d-flex mt-5 ">
+							<span>
+								<i class="fas fa-shapes accordionIcon "></i> <a class="me-1" href="#">處理</a> 
+							</span>
+							<span>
+								<i class="fas fa-poll-h accordionIcon"></i> <a class="me-1" href="#">詳情</a> 
+							</span>
+							<span>
+								<i class="fas fa-trash-alt accordionIcon"></i> <a class="me-1" href="#"> 刪除</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- footer -->
+	<footer class="w-100 px-3 pb-5 py-md-5">
+	<div class="container">
+		<div class="row text-center justify-content-md-between">
+		<div class="col-12 col-md-3 col-lg-3 py-4 ps-4 text-start">
+			<img src="../navbar-footer/ZONERadar.png" alt="logo" class="d-md-block logo">
+		</div>
+		<div class="col-4 col-md-2 col-lg-2">
+			<p>關於我們</p>
+			<ul class="ps-0 list-unstyled">
+			<li class="mb-1 mb-lg-2"><a href="#">關於我們</a></li>
+			<li class="mb-1 mb-lg-2"><a href="#">服務條款</a></li>
+			</ul>
+		</div>
+		<div class="col-4 col-md-2 col-lg-2">
+			<p>客服中心</p>
+			<ul class="ps-0 list-unstyled">
+			<li class="mb-1 mb-lg-2"><a href="#">常見問題</a></li>
+			<li class="mb-1 mb-lg-2"><a href="#">聯絡我們</a></li>
+			</ul>
+		</div>
+		<div class="col-4 col-md-2 col-lg-2">
+			<p>媒體報導</p>
+			<ul class="ps-0 list-unstyled">
+			<li class="mb-1 mb-lg-2"><a href="#">AppWorks</a></li>
+			<li class="mb-1 mb-lg-2"><a href="#">數位時代</a></li>
+			<li class="mb-1 mb-lg-2"><a href="#">Inside</a></li>
+			</ul>
+		</div>
+		<div class="col-4 col-md-2 col-lg-2 social mb-3">
+			<a href="#"><div><i class="fab fa-facebook-f"></i></div></a>
+			<a href="#"><div class="ms-1 ms-lg-2"><i class="fab fa-line"></div></i></a>
+		</div>
+		<span class="text-start mb-3 px-4">本網站的所有資訊均由用戶提供，如有觸犯您的知識版權，請聯繫我們，我們會於接到投訴後即時處理。</span>
+		<span class="text-start px-4">&copy; pickone 挑場地 2014 All Rights Reserved</span>
+		</div>
+	</div>
+	</footer>
 
+
+
+<!--NAV JS-->
+  <script>
+    let register_modal = document.querySelector("#register-modal");
+    let login_modal = document.querySelector("#login-modal");
+    document.querySelector("#a-login-modal").addEventListener("click", () => {
+      bootstrap.Modal.getOrCreateInstance(register_modal).hide();
+    })
+    document.querySelector("#a-register-modal").addEventListener("click", () => {
+      bootstrap.Modal.getOrCreateInstance(login_modal).hide();
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
 
 
 

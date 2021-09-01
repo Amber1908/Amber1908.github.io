@@ -1,0 +1,115 @@
+/* 公用 */
+.mymain{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+
+}
+/* 場地主的場地管理 */
+/* 標頭  Top*/
+.SpaceCardGroup{
+	margin-bottom: 30px;
+}
+.AddSpaceBtn{
+	border: #049DD9 0.2px solid ;
+	background-color: #ffffff;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 8px 15px;
+	color: #049DD9;
+	outline: none;
+	margin-top: 8px;
+	margin-bottom: auto;
+	margin-left: 63px;	
+}
+.AddSpaceBtn:hover {
+	background-color: #EEEEEE;
+}
+.EditSpaceBtn{
+	background-color: #049DD9;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 8px 15px;
+	color: #FFFFFF;
+	outline: none;
+	border: 0.2px solid #049DD9;
+	margin-top: 8px;
+	margin-bottom: auto;
+}
+.EditSpaceBtn:hover {
+	background-color: #ffffff;
+	border: #049DD9 0.2px solid;
+	color: #049DD9;
+}
+.DeleteSpaceBtn{
+		border: #cccccc 0.2px solid;
+		background-color: #ffffff;
+		border-radius: 5px;
+		font-size: 16px;
+		padding: 8px 15px;
+		color: #555555;
+		outline: none;
+		margin-top: 8px;
+		margin-bottom: auto;
+}
+.SpaceCardBody{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.DeleteSpaceBtn:hover {
+	color: #cccccc;
+}
+.btnGroup{
+	margin-left: 54px;
+}
+
+/* 按鈕手機 */
+@media screen and (max-width:767px) {
+	.AddSpaceBtn {
+		margin-left: 32px;
+		margin-bottom: 25px;
+	}
+	.DeleteSpaceBtn {
+		border: #cccccc 0.2px solid;
+		background-color: #ffffff;
+		border-radius: 5px;
+		font-size: 16px;
+		padding: 8px 15px;
+		color: #555555;
+		outline: none;
+		margin-top: 8px;
+		margin-bottom: auto;
+	}
+}
+
+/* 場地管理的商品卡 body  */
+.SpaceCardGroup{
+	border: #049DD9 0.5px solid;
+	border-radius: 5px;
+	padding: 5px;
+}
+.SpaceCardimg{
+	width: 20%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.SpaceCardimg >img{
+	border: #EEEEEE 0.5px solid;
+	border-radius: 5px;
+	width: 100%;
+}
+.SpaceCardBody>p {
+	color: #555555;
+}
+
+
+/* 商品卡手機 */
+@media screen and (max-width:767px) {
+	.SpaceCardimg {
+		width: 100%;
+	}
+	.SpaceCardBody>p {
+		font-size: 14px;
+	}
+}

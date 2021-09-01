@@ -1,0 +1,417 @@
+/* 共用 */
+.container{
+	max-width: 1200px;
+	
+} 
+
+.navbar{z-index: 99;}
+.ordrerAdministrator {
+	margin-top: 80px;
+	/* border-radius: 50px 0px 50px 0px; 
+	background:radial-gradient(circle farthest-corner at bottom, #ffffff, #faaa54);
+	background-color: antiquewhite;   */
+}
+.menuBar{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #cccc;
+}
+.ownerimg{
+	width: 25%;
+	top: -150px;
+	right: 30px;
+}
+ul{
+	margin: 0px;
+}
+li,a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+.menuBar>ul>li>a{
+	color: black;
+	background-color: #ffffff;
+}
+.menuBar>ul>li>a:link {
+	color: black;
+	background-color: #ffffff;
+}
+
+.menuBar>ul>li>a:active {
+	padding-bottom: 15px;
+	color: #000;
+	background-color: #ffffff;
+	border-bottom: #000000 4px solid;
+}
+.addOrder{
+	width: 150px;
+	color: #D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+	background-color: #ffffff;
+}
+.filterbtnq {
+	font-size: 16px;
+	color: #333333;
+	border-radius: 50px;
+	background-color: #ffffff;
+	border: #333333 solid 1px;
+}
+.filterbtng {
+	font-size: 16px;
+	padding-top:10px ;
+	justify-content: center;
+	color: #333333;
+	border-radius: 50px;
+	background-color: #ffffff;
+	border: #333333 solid 1px;
+}
+.deal{
+	border: none;
+	background-color:rgba(256,256,256,0) ;
+}
+.form-check-label{
+	margin-top: 2px;
+}
+.checkbox{
+	margin-top: 20px;
+	margin-left: 90px;
+}
+.all {
+	width: 24%;
+	background-color: #D9831A;
+	box-sizing: border-box;
+}
+	.reserve {
+		width: 24%;
+		background-color: lightseagreen;
+		box-sizing: border-box;
+	}
+
+	.refuse {
+		width: 24%;
+		background-color: royalblue;
+		box-sizing: border-box;
+	}
+
+	.notyet {
+		width: 24%;
+		background-color: firebrick;
+		box-sizing: border-box;
+	}
+
+@media screen and (min-width:768px) {
+	.filterbtn {
+		font-size: 16px;
+		color: #333333;
+		border-radius: 50px;
+		background-color: #ffffff;
+		margin-left: 0%;
+		border: #333333 solid 1px;
+	}
+	.filterbtnq {
+		padding-top: 10PX;
+	}
+}
+@media screen and (min-width:992px) {
+	.filterbtn {
+		font-size: 16px;
+		padding: 3px 10px 3px 10px;
+		color: #333333;
+		border-radius: 50px;
+		background-color: #ffffff;
+		margin-left: 0%;
+		border: #333333 solid 1px;
+	}
+	
+	.checkbox {
+		margin-top: 20px;
+		margin-left: 80px;
+	}
+	
+}
+
+@media screen and (max-width:767px) {
+	.filterbtn {
+		font-size: 16px;
+		padding: 3px 45px 3px 45px;
+		color: #333333;
+		border-radius: 50px;
+		background-color: #ffffff;
+		border: #333333 solid 1px;
+	}
+	.excelbtn {
+		font-size: 16px;
+		width: 150px;
+		margin-top: 20px;
+		padding: 3px 10px 3px 10px;
+		color: #05840e;
+		border: #05840e solid 1px;
+		border-radius: 50px;
+		background-color: #ffffff;
+	}
+	.filterbtnq {
+		padding-top: 10PX;
+	}
+	.all {
+		width: 100%;
+		background-color: #D9831A;
+		box-sizing: border-box;
+	}
+	.reserve {
+		width: 100%;
+		background-color: lightseagreen;
+		box-sizing: border-box;
+	}
+
+	.refuse {
+		width: 100%;
+		background-color: royalblue;
+		box-sizing: border-box;
+	}
+
+	.notyet {
+		width: 100%;
+		background-color: firebrick;
+		box-sizing: border-box;
+	}
+	.fa-shapes {
+		color: #D9831A;
+	}
+}
+
+.excelbtn {
+	font-size: 16px;
+	width: 150px;
+	padding: 3px 10px 3px 10px;
+	color: #05840e;
+	border:#05840e solid 1px ;
+	border-radius: 50px;
+	background-color: #ffffff;
+}
+.stateItem {
+	font-size: 16px;
+	color: #D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+	padding: 3px 5px;
+	width: 155px;
+	background-color: #ffffff;
+	
+}
+.addOrder:hover {
+	width: 150px;
+	color: #ffffff;
+	background:#D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+}
+.stateItem:hover {
+	font-size: 16px;
+	padding: 3px 10px;
+	color: #ffffff;
+	background: #D9831A;
+	border: #D9831A 1px solid;
+	border-radius: 50px;
+}
+.con {
+	font-size: 16px;
+	padding: 2px;
+}
+.addSpace{
+	width: 150px;
+	color: #049DD9;
+	border: #049DD9 1px solid;
+	border-radius: 50px;
+}
+.addSpace:hover {
+	width: 150px;
+	color: #ffffff;
+	background: #049DD9;
+	border-radius: 50px;
+}
+.detail{
+	border: 0px;
+	outline: none;
+	background-color: #ffffff;
+}
+.detail:hover {
+	color: #aaaaaa;
+}
+/* 版控區的ＩＣＯＮ */
+.bi-ui-checks,
+.bi-hand-thumbs-up-fill,
+.bi-hand-thumbs-down-fill,
+.bi-question-lg {
+	font-size: 40px;
+	color: #ffffff;
+}
+/* 預定單管理的表單區 */
+.tablePart> .row{
+	margin-left: 0PX;
+}
+
+/* 我的場地的dropdrow */
+.SpacedRopdownMenu{
+	z-index: 98;
+	padding: 20px;
+	top:480px;
+	right: 35px;
+	background-color:#ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:767px){
+	.ownerimg {
+		width: 45%;
+		top: -120px;
+		right: 15px;
+	}
+	
+	.containerpanelGroup>.row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.SpacedRopdownMenu {
+		z-index: 98;
+		padding: 20px;
+		top: 235px;
+		right: 36px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+	}
+	
+}
+
+@media screen and (min-width:768px) {
+	.stateFind{
+		justify-content: center;
+	}
+}
+.stateFind {
+	justify-content: end;
+}
+.textSpace {
+	padding: 10px 10px 0px 10px;
+}
+@media screen and (min-width:992px) {
+	
+	.stateItemGroup{
+		justify-content: space-between;
+	}
+	.SpacedRopdownMenu {
+		z-index: 98;
+		padding: 20px;
+		top: 385px;
+		right: 35px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+	}
+}
+.containerpanelGroup>.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+label {
+	font-size: 15px;
+}
+
+.panel>p{
+	height: 10px;
+	color: #fff;
+}
+
+.filterbtn{
+	border-radius: 50px;
+}
+/* 新增空間 */
+
+.edditBtn{
+	top: 40px;
+	right: 30px;
+}
+
+.edditSpace>.row>.col {
+	padding-right: 0;
+	padding-left: 0;
+	border: #aaaaaa solid 0.5px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.imgcontainer>img {
+	border-radius: 10px 10px 0px 0px;
+}
+.textcont{
+	height: 100px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: #aaaaaa solid 0.5px;
+	border-left: #aaaaaa solid 0.5px;
+	border-right: #aaaaaa solid 0.5px;
+	width: 350px;
+	padding-top: 20px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+
+
+.fas {
+	font-size: 25px;
+	color: #555555;
+}
+@media screen and (min-width:767px) {
+
+	.detailSpace {
+		margin-top: 20px;
+		padding-top: 60px;
+	}
+}
+@media screen and (min-width:992px) {
+	.edditSpace>.row>.col {
+		padding-right: 0;
+		padding-left: 0;
+		border: #aaaaaa solid 0.5px;
+		width: 47%;
+		margin-right: 16px;
+		border-radius: 10px;
+	}
+
+	.imgcontainer>img {
+		border-radius: 10px 10px 0px 0px  ;
+	}
+	.textSpace{
+		padding: 10px 10px 0px 10px;
+	}
+	.fas{
+		font-size: 25px;
+		color: #555555;
+	}
+	.edditSpace {
+		margin-left: 30px;
+	}	
+}
+
+.fa-chevron-circle-down:hover {
+	transform: rotate(180deg);
+}
+/* 表格的icon */
+.fa-shapes,
+.fa-poll-h,
+.fa-trash-alt,
+.fa-edit,
+.bi-clipboard-data {
+	font-size: 25px;
+}
+.state>.row{
+	--bs-gutter-x: 0rem;
+}
+.cardSpace{
+	border-radius: 10px;
+	border: #aaaaaa 1px solid;
+}

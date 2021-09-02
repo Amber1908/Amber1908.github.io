@@ -4,8 +4,12 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
-
 }
+.fs10{font-size: 10px;}
+.fs12{font-size: 12px;}
+.fs16{font-size: 16px;}
+.fs18{font-size: 18px;}
+.fs16>span{color: #049DD9;}
 /* 場地主的場地管理 */
 /* 標頭  Top*/
 .SpaceCardGroup{
@@ -19,9 +23,8 @@
 	padding: 8px 15px;
 	color: #049DD9;
 	outline: none;
-	margin-top: 8px;
+	
 	margin-bottom: auto;
-	margin-left: 63px;	
 }
 .AddSpaceBtn:hover {
 	background-color: #EEEEEE;
@@ -42,7 +45,8 @@
 	border: #049DD9 0.2px solid;
 	color: #049DD9;
 }
-.DeleteSpaceBtn{
+.DeleteSpaceBtn
+{
 		border: #cccccc 0.2px solid;
 		background-color: #ffffff;
 		border-radius: 5px;
@@ -60,15 +64,68 @@
 .DeleteSpaceBtn:hover {
 	color: #cccccc;
 }
-.btnGroup{
-	margin-left: 54px;
+
+/* 桌機 平板 模板內的Ｃlose x */
+.CloseMbtn{
+	width:5px;
+	height:5px;
+	margin:5px;
 }
+/* 模板內的checkbox  */
+@media screen and (max-width:767px) {
+	
+}
+.form-check-label{
+	font-size:18px;
+}
+.deleteBtnM{
+	background-color: #de6868;
+	color: rgb(255, 255, 255);
+}
+.cancelBtnM{
+	border: #cccccc 0.2px solid;
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 8px 15px;
+	color: #555555;
+	outline: none;
+	margin-bottom: auto;
+}
+/* 修改場地內容 */
+.editDetailsp{
+	font-size: 16px;
+}
+.editDetails{
+	border-bottom: #cccccc 0.2px solid;
+}
+.editDetails:last-child {
+	border-bottom: #cccccc 0.2px none;
+}
+.deleteBtn{
+	background-color: #de6868;
+	color: rgb(255, 255, 255);
+	outline: none;
+}
+.deleteBtn:hover {
+	background-color: #982626;
+	color: rgb(255, 255, 255);
+	outline: none;
+}
+.fsS{
+	font-size: 16px;
+}
+@media screen and(min-with:768px){
+	.deleteWmd {
+		width: 25% !important;
+	}
+}
+
+/* 增加場地 */
 
 /* 按鈕手機 */
 @media screen and (max-width:767px) {
 	.AddSpaceBtn {
 		margin-left: 32px;
-		margin-bottom: 25px;
 	}
 	.DeleteSpaceBtn {
 		border: #cccccc 0.2px solid;

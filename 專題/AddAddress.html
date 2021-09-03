@@ -16,15 +16,15 @@
 </head>
 <body>
 	<div class="mymain">
-		<div class="container">
+		<div class="container containerForAdd">
 			<div class="row ">
-				<div class="col-12">
+				<div class="col-12 ">
 					<h2 class="fs-4">地址</h2>
 					<p class="fs16">您的場地完整的地址，<br>不會公開顯示在<span>ZONERadar</span>的網站列表，只有當客戶完成預定後顯示。</p>
 				</div>
 				<div class="col-12">
 				<div class="row mb-3">
-					<div class="col-12">
+					<div class="col-12 col-md-6 col-xl-6">
 						<label for="country"class="form-label">國家</label>
 						<select id="country" class="form-select" aria-label="Default select example">
 								<option selected>請選擇國家</option>
@@ -38,15 +38,13 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 col-md-6 col-xl-6">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label mt-3">地址1</label>
 							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入地址">
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
+					<div class="col-12 col-md-6 col-xl-6">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label mt-3">地址2</label>
 							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入地址">
@@ -54,16 +52,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 col-md-6 col-xl-6">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label mt-3">城市</label>
 							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex:台北市，新北市，台中市...">
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<label for="State"class="form-label mb-3">行政區</label>
+					<div class="col-12 col-md-6 col-xl-6 mb-3">
+						<label for="State"class="form-label mt-3">行政區</label>
 						<select id="State" class="form-select" aria-label="Default select example">
 								<option selected>請選擇行政區</option>
 								<option value="1">大安區</option>
@@ -77,17 +73,29 @@
 								<option value="9">板橋區</option>
 								<option value="10">土城區</option>
 						</select>
-					</div>
+						</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 col-md-6 col-xl-6">
 						<div class="mb-3">
-							<label for="exampleFormControlInput1" class="form-label">郵遞區號</label>
+							<label for="exampleFormControlInput1" class="form-label mt-3">郵遞區號</label>
 							<input type="ZipCode" class="form-control" id="exampleFormControlInput1" placeholder="">
 						</div>
 					</div>
 				</div>
-
+				<div class="row parkingpart"></div>
+				<div class="row mb-5">
+					<div class="col col-6  ">
+						<a href="membercenter-sellerCentereAddSpace.html">
+							<button class="DeleteSpaceBtn mt-auto mb-auto fsS" type="button"data-bs-toggle="modal" data-bs-target="#deleteModal">
+								上一步
+							</button>
+						</a>
+					</div>
+					<div class="col col-6 text-end mt-auto mb-auto">
+							<a href="AddType.html"><button class="btn deleteBtn fsS  deleteWmd ">下一步</button></a>	
+					</div>
+				</div>
 				</div>
 				</div>
 			</div>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div  id="app" class="container">
+        <div>
+            <h2>單一產品細節</h2>
+            <p v-if="!temp.title">請選擇一個商品查看</p>
+            <div v-else class="card">
+                <div class="tag">{{temp.category}}</div>
+                <div class="inner_part">
+                  <label for="slideImg" class="img">
+                    <img class="img_1" v-bind:src="temp.imageUrl">
+                  </label>
+                  <div class="content content_1">
+                    <div class="title">{{temp.title}}</div>
+                    <div class="text">
+                      {{temp.description}}
+                    </div>
+                    <div class="text">
+                        {{temp.content}}
+                    </di>
+                <div class="text">
+                    {{temp.price}} <span>{{temp.origin_price}}</span>/<span>{{temp.unit}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <h2>產品列表</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>產品名稱</th>
+                    <th>原價</th>
+                    <th>售價</th>
+                    <th>是否啟用</th>
+                    <th>查看細節</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in products">
+                    <td>{{item.title}}</td>
+                    <td>{{item.origin_price}}</td>
+                    <td>{{item.price}}</td>
+                    <td>啟用 未啟用</td>
+                    <td><button type="button" class="custom-btn btn-16 " @click="temp=item">查看細節</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script type="module">
+        import {createApp} from  'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+        const url='https://vue3-course-api.hexschool.io/v2';
+        const path='amberlin081022';
+        // 產品資料格式
+        const app=createApp({
+            data(){
+                return{
+                    temp:{},
+                    products: []
+                }
+            },
+            methods:{
+                checkLogin(){
+                    //取 token
+                    //驗證
+                    const url='https://vue3-course-api.hexschool.io/v2';
+                    const path='amberlin081022';
+                    axios.post(`${url}/admin/signin`,this.user)//要改
+                    .then((res)=>{
+                        console.log(res);
+                        //取token 存cookie
+                        const { token, expired } = res.data;
+                            document.cookie = `amberlin081022token=${token}; expires=${new Date(
+                            expired
+                        )}; `;
+                        console.log(token);
+                    }).catch((error)=>{
+                        console.log(error);
+                    })
+
+                },
+                getProducts(){
+
+                }
+            },
+            mounted() {//一開始要做的事
+
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>
+</html>

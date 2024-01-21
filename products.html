@@ -45,58 +45,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="item in products">
+                <tr v-for="item in products" :key="item.id">
                     <td>{{item.title}}</td>
                     <td>{{item.origin_price}}</td>
                     <td>{{item.price}}</td>
-                    <td>啟用 未啟用</td>
+                    <td>
+                        <span v-if="item.is_enabled">啟用</span>
+                        <span v-else>未啟用</span>
+                    </td>
                     <td><button type="button" class="custom-btn btn-16 " @click="temp=item">查看細節</button></td>
                 </tr>
             </tbody>
         </table>
 
     </div>
-    <script type="module">
-        import {createApp} from  'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-        const url='https://vue3-course-api.hexschool.io/v2';
-        const path='amberlin081022';
-        // 產品資料格式
-        const app=createApp({
-            data(){
-                return{
-                    temp:{},
-                    products: []
-                }
-            },
-            methods:{
-                checkLogin(){
-                    //取 token
-                    //驗證
-                    const url='https://vue3-course-api.hexschool.io/v2';
-                    const path='amberlin081022';
-                    axios.post(`${url}/admin/signin`,this.user)//要改
-                    .then((res)=>{
-                        console.log(res);
-                        //取token 存cookie
-                        const { token, expired } = res.data;
-                            document.cookie = `amberlin081022token=${token}; expires=${new Date(
-                            expired
-                        )}; `;
-                        console.log(token);
-                    }).catch((error)=>{
-                        console.log(error);
-                    })
-
-                },
-                getProducts(){
-
-                }
-            },
-            mounted() {//一開始要做的事
-
-            }
-        });
-        app.mount('#app');
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/products.js" type="module"></script>
 </body>
 </html>

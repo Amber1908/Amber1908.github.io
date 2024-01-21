@@ -12,7 +12,6 @@ const app=createApp({
         login:function(){
             console.log(this.user.username);
             const url='https://vue3-course-api.hexschool.io/v2';
-            const path='amberlin081022';
             axios.post(`${url}/admin/signin`,this.user)
             .then((res)=>{
                 console.log(res);
@@ -22,7 +21,7 @@ const app=createApp({
                     expired
                 )}; `;
                 console.log(token);
-                window.location = "products.html";
+                 window.location = "products.html";
             }).catch((error)=>{
                 console.log(error);
             })
